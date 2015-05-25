@@ -1,5 +1,8 @@
 package de.pb92.snapshotmeter;
 
+import com.parse.Parse;
+import com.parse.ParseObject;
+
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.FragmentManager;
@@ -36,6 +39,14 @@ public class MainMenu extends ActionBarActivity implements
 		// Set up the drawer.
 		mNavigationDrawerFragment.setUp(R.id.navigation_drawer,
 				(DrawerLayout) findViewById(R.id.drawer_layout));
+		
+		// enable parse
+		Parse.enableLocalDatastore(this);
+		Parse.initialize(this, "gjAeDkcZxwcYIUcTRgjwb9S1zr9guqCbHsncD2SW", 
+				"F3LZazEuN0XEUOlQVRIxeCTjvnonWO00PO0lleJb");
+		ParseObject testObject = new ParseObject("TestObject");
+		testObject.put("foo", "bar");
+		testObject.saveInBackground();
 	}
 
 	@Override

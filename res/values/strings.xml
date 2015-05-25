@@ -25,7 +25,7 @@
         <item >täglich</item>
     </string-array>
     <string name="feedback_comment">Optionaler Kommentar</string>
-    <string-array name="feedback_provider">
+    <string-array name="settings_providers">
         <item >Dessauer Stromversorgung GmbH</item>
 		<item >DEW21 (Dortmunder Energie- und Wasserversorgung GmbH)</item>
 		<item >DREWAG - Stadtwerke Dresden GmbH</item>
@@ -33,13 +33,13 @@
 		<item >Gemeinde-Elektrizitäts- und Wasserwerk Burtenbach</item>
 		<item >GemeindeStrom Wadgassen GmbH</item>
 		<item >Gemeindewerke Ammerbuch GmbH</item>
-		<item >Gemeindewerke Bad Sassendorf GmbH & Co. KG</item>
+		<item >Gemeindewerke Bad Sassendorf GmbH &amp; Co. KG</item>
 		<item >Gemeindewerke Baiersbronn</item>
 		<item >Gemeindewerke Bobenheim-Roxheim GmbH</item>
 		<item >Gemeindewerke Dudenhofen</item>
 		<item >Gemeindewerke Ebersdorf</item>
 		<item >Gemeindewerke Enkenbach-Alsenborn</item>
-		<item >Gemeindewerke Eppelborn GmbH & Co. KG</item>
+		<item >Gemeindewerke Eppelborn GmbH &amp; Co. KG</item>
 		<item >Gemeindewerke Frammersbach</item>
 		<item >Gemeindewerke Grefrath GmbH</item>
 		<item >Gemeindewerke Großkrotzenburg GmbH</item>
@@ -51,7 +51,7 @@
 		<item >Gemeindewerke Hördt</item>
 		<item >Gemeindewerke Hütschenhausen c/o Stadtwerke Ramstein-Miesenbach GmbH</item>
 		<item >Gemeindewerke Kirkel GmbH</item>
-		<item >Gemeindewerke Kleinblittersdorf GmbH & Co. KG</item>
+		<item >Gemeindewerke Kleinblittersdorf GmbH &amp; Co. KG</item>
 		<item >Gemeindewerke Krauchenwies</item>
 		<item >Gemeindewerke Krickenbach c/o Technische Werke Kaiserslautern</item>
 		<item >Gemeindewerke Lambsheim</item>
@@ -80,19 +80,19 @@
 		<item >Kommunalunternehmen Gemeindewerke Peißenberg</item>
 		<item >Meißener Stadtwerke GmbH</item>
 		<item >nvb Nordhorner Versorgungsbetriebe GmbH</item>
-		<item >SSW-Stadtwerke St. Wendel GmbH & Co. KG</item>
+		<item >SSW-Stadtwerke St. Wendel GmbH &amp; Co. KG</item>
 		<item >Stadt- und Überlandwerke GmbH Luckau-Lübbenau</item>
 		<item >Städtische Betriebswerke Luckenwalde GmbH</item>
 		<item >Städtische Werke Borna GmbH</item>
 		<item >Städtische Werke Lauf a.d. Pegnitz GmbH</item>
-		<item >Städtische Werke Magdeburg GmbH & Co. KG</item>
+		<item >Städtische Werke Magdeburg GmbH &amp; Co. KG</item>
 		<item >Städtische Werke Spremberg (Lausitz) GmbH</item>
-		<item >Stadtwerk am See GmbH & Co. KG</item>
-		<item >STADTWERK AM SEE GmbH & Co. KG -Bodensee Energie-</item>
+		<item >Stadtwerk am See GmbH &amp; Co. KG</item>
+		<item >STADTWERK AM SEE GmbH &amp; Co. KG -Bodensee Energie-</item>
 		<item >Stadtwerk Külsheim GmbH</item>
 		<item >Stadtwerk Tauberfranken GmbH</item>
 		<item >Stadtwerke - Altmärkische Gas-, Wasser- und Elektrizitätswerke Stendal GmbH</item>
-		<item >Stadtwerke - Strom Plauen GmbH & Co. KG</item>
+		<item >Stadtwerke - Strom Plauen GmbH &amp; Co. KG</item>
 		<item >Stadtwerke Aalen GmbH</item>
 		<item >Stadtwerke Ahaus GmbH</item>
 		<item >Stadtwerke Ahlen GmbH</item>
@@ -116,13 +116,13 @@
 		<item >Stadtwerke Bad Langensalza GmbH</item>
 		<item >Stadtwerke Bad Lauterberg im Harz GmbH</item>
 		<item >Stadtwerke Bad Neustadt a.d. Saale</item>
-		<item >Stadtwerke Bad Pyrmont Energie & Verkehrs GmbH</item>
+		<item >Stadtwerke Bad Pyrmont Energie &amp; Verkehrs GmbH</item>
 		<item >Stadtwerke Bad Rodach</item>
 		<item >Stadtwerke Bad Sachsa GmbH</item>
 		<item >Stadtwerke Bad Säckingen GmbH</item>
 		<item >Stadtwerke Bad Salzdetfurth GmbH</item>
 		<item >Stadtwerke Bad Vilbel GmbH</item>
-		<item >Stadtwerke Bad Wildbad GmbH & Co. KG</item>
+		<item >Stadtwerke Bad Wildbad GmbH &amp; Co. KG</item>
 		<item >Stadtwerke Balingen</item>
 		<item >Stadtwerke Bamberg Energie- und Wasserversorgungs GmbH</item>
 		<item >Stadtwerke Barmstedt</item>
@@ -135,7 +135,7 @@
 		<item >Stadtwerke Bietigheim-Bissingen GmbH</item>
 		<item >Stadtwerke Bitterfeld-Wolfen GmbH</item>
 		<item >Stadtwerke Bliestal GmbH</item>
-		<item >Stadtwerke Böblingen GmbH & Co. KG</item>
+		<item >Stadtwerke Böblingen GmbH &amp; Co. KG</item>
 		<item >Stadtwerke Bochum GmbH</item>
 		<item >Stadtwerke Bogen GmbH</item>
 		<item >Stadtwerke Böhmetal GmbH</item>
@@ -145,7 +145,7 @@
 		<item >Stadtwerke Bräunlingen</item>
 		<item >Stadtwerke Bretten GmbH</item>
 		<item >Stadtwerke Brühl GmbH</item>
-		<item >Stadtwerke Buchen GmbH & Co KG</item>
+		<item >Stadtwerke Buchen GmbH &amp; Co KG</item>
 		<item >Stadtwerke Buchholz i.d.N. GmbH</item>
 		<item >Stadtwerke Bühl GmbH</item>
 		<item >Stadtwerke Burgbernheim</item>
@@ -161,7 +161,7 @@
 		<item >Stadtwerke Detmold GmbH</item>
 		<item >Stadtwerke Dillingen/Saar GmbH</item>
 		<item >Stadtwerke Dinslaken GmbH</item>
-		<item >Stadtwerke Ditzingen GmbH & Co. KG</item>
+		<item >Stadtwerke Ditzingen GmbH &amp; Co. KG</item>
 		<item >Stadtwerke Döbeln GmbH</item>
 		<item >Stadtwerke Dorfen GmbH</item>
 		<item >Stadtwerke Duisburg AG</item>
@@ -190,8 +190,8 @@
 		<item >Stadtwerke Frankenthal GmbH</item>
 		<item >Stadtwerke Frankfurt (Oder) GmbH</item>
 		<item >Stadtwerke Freiberg a.N. Vertriebs-GmbH</item>
-		<item >Stadtwerke Freudenstadt GmbH & Co. KG</item>
-		<item >Stadtwerke Friedrichsthal GmbH & Co. KG</item>
+		<item >Stadtwerke Freudenstadt GmbH &amp; Co. KG</item>
+		<item >Stadtwerke Friedrichsthal GmbH &amp; Co. KG</item>
 		<item >Stadtwerke Fröndenberg GmbH</item>
 		<item >Stadtwerke Fürstenfeldbruck GmbH</item>
 		<item >Stadtwerke Garbsen GmbH</item>
@@ -245,15 +245,15 @@
 		<item >Stadtwerke Landsberg KU</item>
 		<item >Stadtwerke Laufenburg</item>
 		<item >Stadtwerke Lauterbach GmbH</item>
-		<item >Stadtwerke Lebach GmbH & Co. KG</item>
+		<item >Stadtwerke Lebach GmbH &amp; Co. KG</item>
 		<item >Stadtwerke Leinefelde GmbH</item>
 		<item >Stadtwerke Leipzig GmbH</item>
 		<item >Stadtwerke Lengerich GmbH</item>
-		<item >Stadtwerke Lindau (B) GmbH & Co. KG</item>
+		<item >Stadtwerke Lindau (B) GmbH &amp; Co. KG</item>
 		<item >Stadtwerke Lingen GmbH</item>
 		<item >Stadtwerke Löbau GmbH</item>
 		<item >Stadtwerke Löffingen</item>
-		<item >Stadtwerke Lohmar GmbH & Co. KG</item>
+		<item >Stadtwerke Lohmar GmbH &amp; Co. KG</item>
 		<item >Stadtwerke Lübbecke GmbH</item>
 		<item >Stadtwerke Lübz GmbH</item>
 		<item >Stadtwerke Lüdenscheid GmbH</item>
@@ -270,7 +270,7 @@
 		<item >Stadtwerke Metzingen</item>
 		<item >Stadtwerke Mosbach GmbH</item>
 		<item >Stadtwerke Mühlacker GmbH</item>
-		<item >Stadtwerke Mühldorf a. Inn GmbH & Co. KG</item>
+		<item >Stadtwerke Mühldorf a. Inn GmbH &amp; Co. KG</item>
 		<item >Stadtwerke Mühlhausen GmbH</item>
 		<item >Stadtwerke Mühlheim am Main GmbH</item>
 		<item >Stadtwerke MüllheimStaufen GmbH</item>
@@ -326,7 +326,7 @@
 		<item >Stadtwerke Schneverdingen-Neuenkirchen GmbH</item>
 		<item >Stadtwerke Schönebeck GmbH</item>
 		<item >Stadtwerke Schorndorf GmbH</item>
-		<item >Stadtwerke Schramberg GmbH & Co. KG</item>
+		<item >Stadtwerke Schramberg GmbH &amp; Co. KG</item>
 		<item >Stadtwerke Schüttorf GmbH</item>
 		<item >Stadtwerke Schwäbisch Hall GmbH</item>
 		<item >Stadtwerke Schwarzenberg GmbH</item>
@@ -334,7 +334,7 @@
 		<item >Stadtwerke Schweinfurt GmbH</item>
 		<item >Stadtwerke Schwerin GmbH</item>
 		<item >Stadtwerke Schwerte GmbH</item>
-		<item >Stadtwerke Schwetzingen GmbH & Co. KG</item>
+		<item >Stadtwerke Schwetzingen GmbH &amp; Co. KG</item>
 		<item >Stadtwerke Senftenberg GmbH</item>
 		<item >Stadtwerke Sindelfingen GmbH</item>
 		<item >Stadtwerke Soest GmbH</item>
@@ -372,9 +372,9 @@
 		<item >Stadtwerke Waiblingen GmbH</item>
 		<item >Stadtwerke Waldkirch GmbH</item>
 		<item >Stadtwerke Waldshut-Tiengen GmbH</item>
-		<item >Stadtwerke Walldorf GmbH & Co. KG</item>
+		<item >Stadtwerke Walldorf GmbH &amp; Co. KG</item>
 		<item >Stadtwerke Walldürn GmbH</item>
-		<item >Stadtwerke Waltrop GmbH & Co. KG</item>
+		<item >Stadtwerke Waltrop GmbH &amp; Co. KG</item>
 		<item >Stadtwerke Wedel GmbH</item>
 		<item >Stadtwerke Weimar Stadtversorgungs-GmbH</item>
 		<item >Stadtwerke Weinheim GmbH</item>
@@ -390,7 +390,7 @@
 		<item >Stadtwerke Wissen GmbH</item>
 		<item >Stadtwerke Witten GmbH</item>
 		<item >Stadtwerke Wolmirstedt GmbH</item>
-		<item >Stadtwerke Wunstorf GmbH & Co. KG</item>
+		<item >Stadtwerke Wunstorf GmbH &amp; Co. KG</item>
 		<item >Stadtwerke Würzburg AG</item>
 		<item >Stadtwerke Zeil a. Main</item>
 		<item >Stadtwerke Zeitz GmbH</item>
@@ -400,7 +400,7 @@
 		<item >STAWAG - Stadtwerke Aachen AG</item>
 		<item >SWB Energie- und Wasserversorgung Bonn/Rhein Sieg GmbH</item>
 		<item >swb Vertrieb Bremen GmbH</item>
-		<item >swb Vertrieb Bremerhaven GmbH & Co. KG</item>
+		<item >swb Vertrieb Bremerhaven GmbH &amp; Co. KG</item>
 		<item >SWE Energie GmbH</item>
 		<item >SWK Stadtwerke Kaiserslautern Versorgungs-AG</item>
 		<item >SWL Vertriebsgesellschaft mbh</item>
@@ -411,7 +411,7 @@
 		<item >SWT Stadtwerke Trier Versorgungs-GmbH</item>
 		<item >Technische Werke Delitzsch GmbH</item>
 		<item >Technische Werke Naumburg GmbH</item>
-		<item >Technische Werke Schussental GmbH & Co. KG</item>
+		<item >Technische Werke Schussental GmbH &amp; Co. KG</item>
 		<item >Verbands- und Gemeindewerke Rülzheim</item>
 		<item >Verbandsgemeindewerk Dannstadt-Schauernheim</item>
 		<item >Verbandsgemeindewerke Dahner Felsenland</item>

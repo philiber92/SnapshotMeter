@@ -14,21 +14,10 @@
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
         android:text="@string/feedback_rating"
-        android:gravity="center_vertical"
         android:textAppearance="?android:attr/textAppearanceMedium" />
-
-    <RatingBar
-        android:id="@+id/ratingBar1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView1"
-        android:layout_centerHorizontal="true"
-        android:gravity="center_vertical"
-        android:layout_marginTop="19dp" />
 
     <TextView
         android:id="@+id/textView2"
@@ -40,15 +29,6 @@
         android:layout_marginTop="14dp"
         android:text="@string/feedback_life"
         android:textAppearance="?android:attr/textAppearanceMedium" />
-
-    <Spinner
-        android:id="@+id/spinner1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/ratingBar1"
-        android:layout_centerVertical="true"
-        android:gravity="center_vertical"
-        android:entries="@array/feedback_life_items" />
 
     <Button
         android:id="@+id/button1"
@@ -79,10 +59,27 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/editText1"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="15dp"
+        android:layout_alignLeft="@+id/textView1"
         android:gravity="center_vertical"
         android:text="@string/feedback_comment"
         android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <RatingBar
+        android:id="@+id/ratingBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="19dp"
+        android:entries="@array/feedback_life_items"
+        android:gravity="center_vertical" />
 
 </RelativeLayout>
