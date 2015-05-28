@@ -1,0 +1,126 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+	<RelativeLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingBottom="@dimen/activity_vertical_margin"
+	    android:paddingLeft="@dimen/activity_horizontal_margin"
+	    android:paddingRight="@dimen/activity_horizontal_margin"
+	    android:paddingTop="@dimen/activity_vertical_margin" >
+
+	    <!-- meter name -->
+	    <TextView
+		    android:id="@+id/textView1"
+		    android:layout_width="180dp"
+		    android:layout_height="wrap_content"
+		    android:layout_centerHorizontal="true"
+		    android:text="@string/meter_add_name"
+		    android:textAppearance="?android:attr/textAppearanceMedium" />
+	    
+		<EditText
+		    android:id="@+id/editText1"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@+id/textView1"
+		    android:layout_alignLeft="@+id/textView1"
+		    android:layout_alignRight="@+id/textView1"
+		    android:layout_marginTop="3dp"
+		    android:hint="@string/meter_add_name_hint" >
+
+		    <requestFocus />
+		</EditText>
+		
+		<!-- meter type -->
+		<TextView
+		    android:id="@+id/textView2"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@+id/editText1"
+		    android:layout_alignLeft="@+id/textView1"
+		    android:layout_alignRight="@+id/textView1"
+		    android:layout_marginTop="11dp"
+		    android:text="@string/meter_add_type"
+		    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+		<Spinner
+		    android:id="@+id/spinner1"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@+id/textView2"
+		    android:layout_alignLeft="@+id/textView1"
+		    android:layout_alignRight="@+id/textView1"
+		    android:layout_marginTop="3dp"
+		    android:entries="@array/meter_unit"/>
+	
+		<!-- meter provider -->
+		<TextView
+		    android:id="@+id/textView3"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@+id/spinner1"
+		    android:layout_alignLeft="@+id/textView1"
+		    android:layout_alignRight="@+id/textView1"
+		    android:layout_marginTop="11dp"
+		    android:text="@string/meter_add_provider"
+		    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+		<Spinner
+		    android:id="@+id/spinner2"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@+id/textView3"
+		    android:layout_alignLeft="@+id/textView1"
+		    android:layout_alignRight="@+id/textView1"
+		    android:layout_marginTop="3dp" 
+		    android:entries="@array/meter_unit" />
+
+		<!--  last name -->
+		<TextView
+		    android:id="@+id/textView4"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@+id/spinner2"
+		    android:layout_alignLeft="@+id/textView1"
+		    android:layout_alignRight="@+id/textView1"
+		    android:layout_marginTop="11dp"
+		    android:text="@string/meter_add_lastname"
+		    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+		<EditText
+		    android:id="@+id/editText2"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@+id/textView4"
+		    android:layout_alignLeft="@+id/textView1"
+		    android:layout_alignRight="@+id/textView1"
+		    android:layout_marginTop="3dp" 
+		    android:inputType="text"
+		    android:ems="10"  
+		    android:maxLength="50"/>
+
+		<Button
+		    android:id="@+id/button1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/editText2"
+	        android:layout_marginLeft="24dp"
+	        android:layout_marginTop="110dp"
+	        android:layout_toRightOf="@+id/button2"
+		    android:text="@string/meter_add_abort" />
+
+		<Button
+		    android:id="@+id/button2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignBaseline="@+id/button1"
+	        android:layout_alignBottom="@+id/button1"
+	        android:layout_alignParentLeft="true"
+	        android:layout_marginLeft="40dp"
+		    android:text="@string/meter_add_add" />
+
+	</RelativeLayout>
+</ScrollView>
+
