@@ -42,6 +42,10 @@
             android:name=".MeterAdd"
             android:label="@string/title_activity_meter_add" >
         </activity>
+        <activity
+            android:name=".MeterReadingOverview"
+            android:label="@string/title_activity_meter_reading_overview" >
+        </activity>
     </application>
 
 </manifest>

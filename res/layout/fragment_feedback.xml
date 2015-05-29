@@ -1,85 +1,188 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="de.pb92.snapshotmeter.MainMenu$FeedbackFragment" >
+<ScrollView android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <!-- TODO: Update blank fragment layout -->
-
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:gravity="center_vertical"
-        android:text="@string/feedback_rating"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin" >
 
-    <TextView
-        android:id="@+id/textView2"
-        android:gravity="center"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/ratingBar1"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="14dp"
-        android:text="@string/feedback_life"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+        <!-- meter rating -->
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="17dp"
+            android:gravity="center_vertical"
+            android:text="@string/feedback_rating"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
 
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/textView1"
-        android:layout_marginBottom="14dp"
-        android:gravity="center_vertical"
-        android:text="@string/feedback_send" />
+        <RatingBar
+            android:id="@+id/feedbackRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            android:gravity="center_vertical" />
 
-    <EditText
-        android:id="@+id/editText1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/button1"
-        android:layout_alignLeft="@+id/spinner1"
-        android:layout_alignRight="@+id/ratingBar1"
-        android:layout_marginBottom="22dp"
-        android:gravity="center_vertical"
-        android:ems="10"
-        android:inputType="textMultiLine"
-        android:minLines="2"
-        android:maxLength="1000" />
+        <!-- meter reading success -->
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/feedbackRatingBar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:text="@string/feedback_reading_success"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+		<RadioGroup
+		    android:id="@+id/feedbackReadingGroup"
+    		android:layout_width="wrap_content"
+   		 	android:layout_height="wrap_content"
+   			android:orientation="horizontal"
+   			android:layout_below="@+id/textView2"
+   			android:layout_marginTop="3dp"
+   		    android:layout_centerHorizontal="true">
+	        <RadioButton
+	            android:id="@+id/feedbackReadingYes"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/feedback_radio_yes" />
+	        <RadioButton
+	            android:id="@+id/feedbackReadingNo"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/feedback_radio_no" />
+        </RadioGroup>
+        
+		<!-- meter usability -->
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/feedbackReadingGroup"
+            android:layout_marginTop="12dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/feedback_life"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+		<Spinner
+            android:id="@+id/feedbackSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView5"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            android:entries="@array/feedback_life_items"
+            android:gravity="center_vertical" />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/editText1"
-        android:layout_alignLeft="@+id/textView1"
-        android:gravity="center_vertical"
-        android:text="@string/feedback_comment"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+		<!-- provider desire -->
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/feedbackSpinner"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:text="@string/feedback_desire"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+		<RadioGroup
+		    android:id="@+id/feedbackDesireGroup"
+    		android:layout_width="wrap_content"
+   		 	android:layout_height="wrap_content"
+   			android:orientation="horizontal"
+   			android:layout_below="@+id/textView4"
+   			android:layout_marginTop="3dp"
+   		    android:layout_centerHorizontal="true">
+	        <RadioButton
+	            android:id="@+id/feedbackDesireYes"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/feedback_radio_yes" />
+	        <RadioButton
+	            android:id="@+id/feedbackDesireNo"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/feedback_radio_no" />
+        </RadioGroup>
+        
+		<!-- current provider -->
+		<TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/feedbackDesireGroup"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:text="@string/feedback_provider"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+		
+		<EditText
+            android:id="@+id/feedbackProvider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView6"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:inputType="text"
+            android:lines="1"
+            android:maxLength="100"
+            android:maxLines="1" >
+            <requestFocus />
+        </EditText>
 
-    <RatingBar
-        android:id="@+id/ratingBar1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView1"
-        android:layout_centerHorizontal="true"
-        android:gravity="center_vertical" />
+		<!-- comment -->
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_below="@+id/feedbackProvider"
+            android:layout_marginTop="7dp"
+            android:gravity="center_vertical"
+            android:text="@string/feedback_comment"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+		<EditText
+            android:id="@+id/feedbackComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:inputType="textMultiLine"
+            android:lines="2"
+            android:maxLength="1000"
+            android:minLines="2" >
+            <requestFocus />
+        </EditText>
 
-    <Spinner
-        android:id="@+id/spinner1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView2"
-        android:layout_below="@+id/textView2"
-        android:layout_marginTop="19dp"
-        android:entries="@array/feedback_life_items"
-        android:gravity="center_vertical" />
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/textView1"
+            android:layout_below="@+id/feedbackComment"
+            android:layout_marginTop="22dp"
+            android:gravity="center_vertical"
+            android:onClick="sendFeedback"
+            android:text="@string/feedback_send" />
+        
 
-</RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,11 +1,20 @@
 package de.pb92.snapshotmeter;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import com.parse.ParseException;
+import com.parse.ParseQuery;
+
+import de.pb92.snapshotmeter.adapter.MeterListAdapter;
+import de.pb92.snapshotmeter.parse.Meter;
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListView;
 
 public class OverviewFragment extends Fragment {
 	/**
@@ -33,6 +42,21 @@ public class OverviewFragment extends Fragment {
 			Bundle savedInstanceState) {
 		View rootView = inflater.inflate(R.layout.fragment_overview,
 				container, false);
+		
+		ParseQuery<Meter> query = Meter.getQuery();
+		query.fromLocalDatastore();
+		List<Meter> queryList;
+		
+		try {
+			queryList = query.find();
+		} catch (ParseException e) {
+			queryList = new ArrayList<Meter>();
+		}
+		
+		MeterListAdapter listAdapter = new MeterListAdapter(new ArrayList<Meter>(queryList), getActivity());
+		ListView listView = (ListView)rootView.findViewById(R.id.listView1);
+		listView.setAdapter(listAdapter);
+		
 		return rootView;
 	}
 
