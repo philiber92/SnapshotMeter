@@ -20,6 +20,7 @@
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
         android:layout_marginRight="5dp"
+        android:visibility="invisible"
         android:text="@string/meter_overview_insert" />
 
     <Button
@@ -30,6 +31,7 @@
         android:layout_alignBaseline="@+id/meterInsert"
         android:layout_alignBottom="@+id/meterInsert"
         android:layout_toLeftOf="@+id/meterInsert"
+        android:visibility="invisible"
         android:text="@string/meter_overview_all" />
 
 </RelativeLayout>

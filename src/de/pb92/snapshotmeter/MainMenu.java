@@ -6,7 +6,6 @@ import java.util.Date;
 import java.util.List;
 
 import com.parse.ParseException;
-import com.parse.ParseObject;
 import com.parse.ParseQuery;
 
 import de.pb92.snapshotmeter.parse.Feedback;
@@ -19,14 +18,17 @@ import android.support.v4.app.DialogFragment;
 import android.support.v4.app.FragmentManager;
 import android.app.AlertDialog;
 import android.app.Dialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.ConnectivityManager;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.RatingBar;
 import android.widget.Spinner;
 import android.widget.Toast;
@@ -180,15 +182,15 @@ public class MainMenu extends ActionBarActivity implements
 	}
 	
 	public void sendFeedback(View view) {
-		ParseQuery<ParseObject> query = ParseQuery.getQuery("Feedback");
+		ParseQuery<Feedback> query = Feedback.getQuery();
 		query.fromLocalDatastore();
 		query.orderByDescending("createdAt");
 		try {
-			List<ParseObject> queryList = query.find();
-			if(queryList.isEmpty()) {
+			List<Feedback> result = query.find();
+			if(!result.isEmpty()) {
 				Calendar cal1 = Calendar.getInstance();
 				Calendar cal2 = Calendar.getInstance();
-				cal1.setTime(queryList.get(0).getCreatedAt());
+				cal1.setTime(result.get(0).getCreatedAt());
 				cal2.setTime(new Date());
 				
 				if(cal1.get(Calendar.YEAR) == cal2.get(Calendar.YEAR) &&
@@ -203,10 +205,15 @@ public class MainMenu extends ActionBarActivity implements
 			//ignore
 		}
 		
+		RadioGroup desireGroup = (RadioGroup)findViewById(R.id.feedbackDesireGroup);
+		RadioGroup readingGroup = (RadioGroup)findViewById(R.id.feedbackReadingGroup);
 		RatingBar rBar = (RatingBar) findViewById(R.id.feedbackRatingBar);
 		float rating = rBar.getRating();
 		
-		if(Float.compare(rating, 0.0f) == 0) {
+		//check if all not optional fields are set
+		if(Float.compare(rating, 0.0f) == 0 
+				|| desireGroup.getCheckedRadioButtonId() == -1 
+				|| readingGroup.getCheckedRadioButtonId() == -1) {
 			AlertFeedbackDialogFragment alertDialog = new AlertFeedbackDialogFragment();
 			alertDialog.show(getSupportFragmentManager(), "alertFeedbackDialog");
 			return;
@@ -249,8 +256,8 @@ public class MainMenu extends ActionBarActivity implements
 						feedback.setDesire(desire);
 						feedback.setProvider(provider);
 						feedback.setComment(comment);
-						feedback.saveEventually();
 						feedback.pinInBackground();
+						feedback.saveInBackground();
 						
 						Toast.makeText(getActivity(), getString(R.string.feedback_toast_sent), 
 								Toast.LENGTH_SHORT)

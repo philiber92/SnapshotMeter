@@ -13,12 +13,12 @@ public class MeterReading extends ParseObject {
 	public static final String COLUMN_PROVIDER = "provider";
 	public static final String COLUMN_TRANSMITTED = "transmitted";
 	
-	public float getValue() {
-		return (Float) getNumber(COLUMN_VALUE);
+	public long getValue() {
+		return getLong(COLUMN_VALUE);
 	}
 	
-	public int getMeterNumber() {
-		return getInt(COLUMN_METER_NUMBER);
+	public long getMeterNumber() {
+		return getLong(COLUMN_METER_NUMBER);
 	}
 	
 	public String getLastName() {
@@ -33,11 +33,11 @@ public class MeterReading extends ParseObject {
 		return getBoolean(COLUMN_TRANSMITTED);
 	}
 	
-	public void setValue(Float value) {
+	public void setValue(long value) {
 		put(COLUMN_VALUE, value);
 	}
 	
-	public void setMeterNumber(int number) {
+	public void setMeterNumber(long number) {
 		put(COLUMN_METER_NUMBER, number);
 	}
 	

@@ -65,18 +65,17 @@ public class MeterListAdapter extends BaseAdapter implements ListAdapter {
 			
 			@Override
 			public void onClick(View v) {
-				Intent intent = new Intent(parent.getContext(), MeterReadingOverview.class);
+				Intent intent = new Intent(parent.getContext(), CameraSnapshot.class);
 				intent.putExtra(MainMenu.EXTRA_METER_ID, list.get(position).getObjectId());
 				parent.getContext().startActivity(intent);
 			}
 		});
 		
-		
 		overviewButton.setOnClickListener(new OnClickListener() {
 			
 			@Override
 			public void onClick(View v) {
-				Intent intent = new Intent(parent.getContext(), CameraSnapshot.class);
+				Intent intent = new Intent(parent.getContext(), MeterReadingOverview.class);
 				intent.putExtra(MainMenu.EXTRA_METER_ID, list.get(position).getObjectId());
 				parent.getContext().startActivity(intent);
 			}

@@ -14,6 +14,9 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
+import android.widget.Button;
 import android.widget.ListView;
 
 public class OverviewFragment extends Fragment {
@@ -56,6 +59,18 @@ public class OverviewFragment extends Fragment {
 		MeterListAdapter listAdapter = new MeterListAdapter(new ArrayList<Meter>(queryList), getActivity());
 		ListView listView = (ListView)rootView.findViewById(R.id.listView1);
 		listView.setAdapter(listAdapter);
+		
+		listView.setOnItemClickListener(new OnItemClickListener() {
+			
+			@Override
+			public void onItemClick(AdapterView<?> parent, View view,
+					int position, long id) {
+				Button insert = (Button) view.findViewById(R.id.meterInsert);
+				Button show = (Button) view.findViewById(R.id.meterAll);
+				insert.setVisibility(View.VISIBLE);
+				show.setVisibility(View.VISIBLE);
+			}
+		});
 		
 		return rootView;
 	}

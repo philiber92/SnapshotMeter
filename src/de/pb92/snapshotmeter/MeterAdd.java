@@ -1,7 +1,14 @@
 package de.pb92.snapshotmeter;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import com.parse.ParseException;
+import com.parse.ParseQuery;
+
 import de.pb92.snapshotmeter.parse.Meter;
 import android.support.v7.app.ActionBarActivity;
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -41,21 +48,44 @@ public class MeterAdd extends ActionBarActivity {
 	
 	public void addMeter(View view) {
 		EditText editText1 = (EditText)findViewById(R.id.editText1);
+		EditText editText2 = (EditText)findViewById(R.id.editText2);
 		Spinner spinner1 = (Spinner)findViewById(R.id.spinner1);
 		Spinner spinner2 = (Spinner)findViewById(R.id.spinner2);
 		
 		String name = editText1.getText().toString().trim();
+		String numberText = editText2.getText().toString().trim();
+		long number = Long.parseLong(numberText);
 		String type = String.valueOf(spinner1.getSelectedItem());
 		String provider = String.valueOf(spinner2.getSelectedItem());
 		
-		if(name.isEmpty()) {
+		if(name.isEmpty() || numberText.isEmpty()) {
 			Toast.makeText(getBaseContext(), R.string.meter_add_no_name, Toast.LENGTH_LONG)
 				 .show();
 			return;
 		}
 		
+		ParseQuery<Meter> query = Meter.getQuery();
+		query.fromLocalDatastore();
+		query.whereEqualTo(Meter.COLUMN_METER_NUMBER, number);
+		List<Meter> result;
+		try {
+			result = query.find();
+		} catch (ParseException e) {
+			// not found
+			result = new ArrayList<Meter>();
+		}
+		
+		
+		//meter already exists
+		if(!result.isEmpty()) {
+			Toast.makeText(getBaseContext(), R.string.meter_add_number_exists, Toast.LENGTH_LONG)
+			 .show();
+			return;
+		}
+		
 		Meter meter = new Meter();
 		meter.setMeterName(name);
+		meter.setMeterNumber(number);
 		meter.setMeterType(type);
 		meter.setProvider(provider);
 		meter.pinInBackground();

@@ -1,11 +1,20 @@
 package de.pb92.snapshotmeter;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import com.parse.ParseException;
+import com.parse.ParseQuery;
+
+import de.pb92.snapshotmeter.parse.Settings;
+
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 
 public class SettingsFragment extends Fragment {
 	/**
@@ -33,6 +42,22 @@ public class SettingsFragment extends Fragment {
 			Bundle savedInstanceState) {
 		View rootView = inflater.inflate(R.layout.fragment_settings,
 				container, false);
+		
+		ParseQuery<Settings> settings = Settings.getQuery();
+		settings.fromLocalDatastore();
+		
+		List<Settings> result;
+		try {
+			result = settings.find();
+		} catch (ParseException e) {
+			result = new ArrayList<Settings>();
+		}
+		
+		if(!result.isEmpty()) {
+			EditText editText = (EditText) rootView.findViewById(R.id.editText1);
+			editText.setText(result.get(0).getLastName());
+		}
+		
 		return rootView;
 	}
 

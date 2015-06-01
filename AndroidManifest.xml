@@ -13,7 +13,9 @@
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
-    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
 
     <application
         android:name=".SnapshotMeter"
@@ -45,6 +47,18 @@
         <activity
             android:name=".MeterReadingOverview"
             android:label="@string/title_activity_meter_reading_overview" >
+        </activity>
+        <activity
+            android:name=".MeterChange"
+            android:label="@string/title_activity_meter_change" >
+        </activity>
+        <activity
+            android:name=".MeterReadingQuick"
+            android:label="@string/title_activity_meter_reading_quick" >
+        </activity>
+        <activity
+            android:name=".MeterReading"
+            android:label="@string/title_activity_meter_reading" >
         </activity>
     </application>
 

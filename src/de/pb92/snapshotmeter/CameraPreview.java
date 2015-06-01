@@ -1,8 +1,6 @@
 package de.pb92.snapshotmeter;
 
 import android.content.Context;
-import android.graphics.Canvas;
-import android.graphics.Paint;
 import android.hardware.Camera;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
@@ -26,18 +24,6 @@ public class CameraPreview extends SurfaceView implements SurfaceHolder.Callback
         try {
             _camera.setPreviewDisplay(holder);
             _camera.startPreview();
-            if(_holder.getSurface().isValid()) {
-                Canvas canvas = _holder.lockCanvas();
-                Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
-
-                paint.setStyle(Paint.Style.STROKE);
-                paint.setStrokeWidth(3);
-
-                int w = canvas.getWidth();
-                int h = canvas.getHeight();
-                canvas.drawPoint(0, 0, paint);
-                _holder.unlockCanvasAndPost(canvas);
-            }
         } catch (java.io.IOException e) {
         	
         }

@@ -30,8 +30,29 @@
 		    android:layout_marginTop="3dp"
 		    android:maxLength="60"
 		   	android:inputType="text">
-
-		    <requestFocus />
+		</EditText>
+		
+		<!-- meter number -->
+	    <TextView
+		    android:id="@+id/meterNumber"
+		    android:layout_width="180dp"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@+id/editText1"
+		    android:layout_marginTop="11dp"
+		    android:layout_centerHorizontal="true"
+		    android:text="@string/meter_add_number"
+		    android:textAppearance="?android:attr/textAppearanceMedium" />
+	    
+		<EditText
+		    android:id="@+id/editText2"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@+id/meterNumber"
+		    android:layout_alignLeft="@+id/textView1"
+		    android:layout_alignRight="@+id/textView1"
+		    android:layout_marginTop="3dp"
+		    android:inputType="number"
+		    android:maxLength="16" >
 		</EditText>
 		
 		<!-- meter type -->
@@ -39,7 +60,7 @@
 		    android:id="@+id/textView2"
 		    android:layout_width="wrap_content"
 		    android:layout_height="wrap_content"
-		    android:layout_below="@+id/editText1"
+		    android:layout_below="@+id/editText2"
 		    android:layout_alignLeft="@+id/textView1"
 		    android:layout_alignRight="@+id/textView1"
 		    android:layout_marginTop="11dp"
