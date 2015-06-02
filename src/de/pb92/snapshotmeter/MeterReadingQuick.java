@@ -28,6 +28,12 @@ public class MeterReadingQuick extends ActionBarActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_meter_reading_quick);
+		Intent intent = getIntent();
+		String value = intent.getStringExtra(CameraSnapshot.EXTRA_METER_VALUE);
+		if(value != null) {
+			EditText editText = (EditText) findViewById(R.id.editText2);
+			editText.setText(value);
+		}
 	}
 
 	@Override

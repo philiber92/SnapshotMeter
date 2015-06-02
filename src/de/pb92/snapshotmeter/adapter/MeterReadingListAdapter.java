@@ -1,8 +1,10 @@
 package de.pb92.snapshotmeter.adapter;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import com.parse.ParseException;
+import com.parse.ParseQuery;
 
 import android.content.Intent;
 
@@ -30,6 +32,7 @@ public class MeterReadingListAdapter extends BaseAdapter implements ListAdapter{
 	ArrayList<MeterReading> meterReading;
 	Context context;
 	String unit;
+	String objectID;
 	
 	public MeterReadingListAdapter(Context context, ArrayList<MeterReading> meterReading) {
 		this.context = context;
@@ -37,28 +40,14 @@ public class MeterReadingListAdapter extends BaseAdapter implements ListAdapter{
 		this.unit = "";
 		
 		Intent intent = ((Activity) context).getIntent();
-		String objectID = intent.getStringExtra(MainMenu.EXTRA_METER_ID);
+		objectID = intent.getStringExtra(MainMenu.EXTRA_METER_ID);
 		
 		try {
-			
-			Meter meter = Meter.getQuery().get(objectID);
-			String type = meter.getMeterType();
-			
-			String water = context.getString(R.string.meter_reading_unit_water);
-			String gas = context.getString(R.string.meter_reading_unit_gas);
-			String current = context.getString(R.string.meter_reading_unit_current);
-			String heating = context.getString(R.string.meter_reading_unit_heating);
-			
-			if(type == "Strom") {
-				unit = current;
-			} else if(type == "Wasser") {
-				unit = water;
-			} else if(type == "Gas") {
-				unit = gas;
-			} else {
-				unit = heating;
-			}
-			
+			ParseQuery<Meter> query = Meter.getQuery();
+			query.fromLocalDatastore();
+			query.whereEqualTo(Meter.COLUMN_ID, objectID);
+			List<Meter> result = query.find();
+			unit = result.get(0).getMeterUnit(context);
 		} catch (ParseException e) {
 			unit = context.getString(R.string.meter_reading_unit_current);
 		}
@@ -89,7 +78,7 @@ public class MeterReadingListAdapter extends BaseAdapter implements ListAdapter{
 		}
 		
 		TextView listItemText = (TextView) view.findViewById(R.id.meterItem);
-		listItemText.setText(Float.toString(meterReading.get(position).getValue()) + " " + unit);
+		listItemText.setText(Long.toString(meterReading.get(position).getValue()) + " " + unit);
 		
 		Button showButton = (Button) view.findViewById(R.id.meterShow);
 		
@@ -99,7 +88,8 @@ public class MeterReadingListAdapter extends BaseAdapter implements ListAdapter{
 			public void onClick(View v) {
 				Intent intent = new Intent(parent.getContext(), MeterDetail.class);
 				intent.putExtra(MeterReadingOverview.EXTRA_METER_VALUE_ID, 
-									meterReading.get(position).getObjectId());
+									meterReading.get(position).getID());
+				intent.putExtra(MeterReadingOverview.EXTRA_METER_ID, objectID);
 				parent.getContext().startActivity(intent);		
 			}
 		});

@@ -18,10 +18,8 @@ import android.support.v4.app.DialogFragment;
 import android.support.v4.app.FragmentManager;
 import android.app.AlertDialog;
 import android.app.Dialog;
-import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.net.ConnectivityManager;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -262,6 +260,8 @@ public class MainMenu extends ActionBarActivity implements
 						Toast.makeText(getActivity(), getString(R.string.feedback_toast_sent), 
 								Toast.LENGTH_SHORT)
 							 .show();
+						Intent intent = new Intent(getBaseContext(), MainMenu.class);
+						startActivity(intent);
 					}
 				})
 				.setNegativeButton(R.string.feedback_push_abort, 

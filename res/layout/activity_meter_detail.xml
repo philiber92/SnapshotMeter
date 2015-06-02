@@ -15,6 +15,7 @@
 	    <TextView
 	        android:id="@+id/textView2"
 	        android:layout_width="160dp"
+	        android:textAppearance="?android:attr/textAppearanceMedium" 
 	        android:layout_height="wrap_content"
 	        android:layout_alignParentTop="true"
 	        android:layout_centerHorizontal="true"
@@ -22,7 +23,7 @@
 	        android:text="@string/meter_reading_value" />
 	    	
 	    <TextView
-	        android:id="@+id/textView4"
+	        android:id="@+id/meterValue"
 	        style="@android:style/TextAppearance.Medium"
 	        android:layout_width="125dp"
 	        android:layout_height="wrap_content"
@@ -33,14 +34,14 @@
 	        android:text="@string/meter_reading_unknown" />
 	    
 	    <TextView
-	        android:id="@+id/textView9"
+	        android:id="@+id/meterUnit"
 	        style="@android:style/TextAppearance.Medium"
 	        android:textColor="@color/black"
 	        android:layout_width="35dp"
 	        android:layout_height="wrap_content"
-	        android:layout_alignBaseline="@+id/textView4"
-	        android:layout_alignBottom="@+id/textView4"
-	        android:layout_toRightOf="@+id/textView4"
+	        android:layout_alignBaseline="@+id/meterValue"
+	        android:layout_alignBottom="@+id/meterValue"
+	        android:layout_toRightOf="@+id/meterValue"
 	        android:text="@string/meter_reading_unit_current" />
 	    
 	    <!-- meter type -->
@@ -50,12 +51,12 @@
 	        android:layout_height="wrap_content"
 	        android:layout_alignLeft="@+id/textView2"
 	        android:layout_alignRight="@+id/textView2"
-	        android:layout_below="@+id/textView4"
+	        android:layout_below="@+id/meterValue"
 	        android:layout_marginTop="17dp"
 	        android:text="@string/meter_reading_type" />
 	    
 	    <TextView
-	        android:id="@+id/textView5"
+	        android:id="@+id/meterDescription"
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
 	        android:layout_alignLeft="@+id/textView2"
@@ -72,12 +73,12 @@
 	        android:layout_height="wrap_content"
 	        android:layout_alignLeft="@+id/textView2"
 	        android:layout_alignRight="@+id/textView2"
-	        android:layout_below="@+id/textView5"
+	        android:layout_below="@+id/meterDescription"
 	        android:layout_marginTop="17dp"
 	        android:text="@string/meter_reading_number" />
 
 	    <TextView
-	        android:id="@+id/textView6"
+	        android:id="@+id/meterNumber"
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
 	        android:layout_alignLeft="@+id/textView2"
@@ -94,12 +95,12 @@
 	        android:layout_height="wrap_content"
 	        android:layout_alignLeft="@+id/textView2"
 	        android:layout_alignRight="@+id/textView2"
-	        android:layout_below="@+id/textView6"
+	        android:layout_below="@+id/meterNumber"
 	        android:layout_marginTop="17dp"
 	        android:text="@string/meter_reading_date" />
 
 	    <TextView
-	        android:id="@+id/textView8"
+	        android:id="@+id/meterDate"
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
 	        android:layout_alignLeft="@+id/textView2"
@@ -112,23 +113,25 @@
 	    <RelativeLayout 
 		    android:layout_height="wrap_content"
 		    android:layout_width="wrap_content"
-			android:layout_below="@+id/textView8"
+			android:layout_below="@+id/meterDate"
 			android:layout_centerHorizontal="true"
 			android:layout_marginTop="30dp"
 			android:gravity="center"> 
-		    >
+		    
 		    <Button
-		        android:id="@+id/button1"
+		        android:id="@+id/sendButton"
 		        android:layout_width="100dp"
 		        android:layout_height="wrap_content"
 		        android:layout_toRightOf="@+id/button2"
-		        android:text="@string/meter_reading_send" />
+		        android:text="@string/meter_reading_send"
+		        android:onClick="sendValue" />
 	
 		    <Button
 		        android:id="@+id/button2"
 		        android:layout_width="100dp"
 		        android:layout_height="wrap_content"
-		        android:text="@string/meter_reading_back" />
+		        android:text="@string/meter_reading_back"
+		        android:onClick="abort" />
 
 		    <Button
 		        android:id="@+id/button3"
@@ -139,8 +142,10 @@
 		        android:layout_centerVertical="true"
 		        android:layout_marginRight="14dp"
 		        android:background="@color/red"
-		        android:text="Löschen" />
+		        android:text="@string/meter_reading_delete"
+		        android:onClick="deleteValue" />
 
 		</RelativeLayout>
+
 	</RelativeLayout>
 </ScrollView>

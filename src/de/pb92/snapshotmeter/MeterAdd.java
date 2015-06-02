@@ -8,7 +8,6 @@ import com.parse.ParseQuery;
 
 import de.pb92.snapshotmeter.parse.Meter;
 import android.support.v7.app.ActionBarActivity;
-import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -87,6 +86,7 @@ public class MeterAdd extends ActionBarActivity {
 		meter.setMeterName(name);
 		meter.setMeterNumber(number);
 		meter.setMeterType(type);
+		meter.setID();
 		meter.setProvider(provider);
 		meter.pinInBackground();
 		

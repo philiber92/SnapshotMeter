@@ -7,6 +7,7 @@ import java.util.Date;
 
 import com.googlecode.tesseract.android.TessBaseAPI;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -26,6 +27,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.hardware.Camera;
 
+@SuppressLint("SimpleDateFormat")
 @SuppressWarnings("deprecation")
 public class CameraSnapshot extends Activity {
 	
@@ -186,6 +188,7 @@ public class CameraSnapshot extends Activity {
 	
 
 	/** Create a file Uri for saving an image or video */
+	@SuppressWarnings("unused")
 	private static Uri getOutputMediaFileUri(int type){
 	      return Uri.fromFile(getOutputMediaFile(type));
 	}

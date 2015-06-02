@@ -1,5 +1,8 @@
 package de.pb92.snapshotmeter;
 
+import java.util.Date;
+import java.util.List;
+
 import com.parse.ParseACL;
 import com.parse.ParseException;
 import com.parse.ParseQuery;
@@ -25,6 +28,7 @@ import android.widget.Toast;
 public class MeterReading extends ActionBarActivity {
 	
 	String objectID;
+	String idLocally = null;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +36,11 @@ public class MeterReading extends ActionBarActivity {
 		setContentView(R.layout.activity_meter_reading);
 		Intent intent = getIntent();
 		objectID = intent.getStringExtra(MainMenu.EXTRA_METER_ID);
+		String value = intent.getStringExtra(CameraSnapshot.EXTRA_METER_VALUE);
+		if(value != null) {
+			EditText editText = (EditText) findViewById(R.id.editText1);
+			editText.setText(value);
+		}
 	}
 
 	@Override
@@ -60,7 +69,7 @@ public class MeterReading extends ActionBarActivity {
 	}
 	
 	public void saveValue(View view) {
-		if(saveLocally() == true) {
+		if(saveLocally(1) == true) {
 			Toast.makeText(getBaseContext(), getString(R.string.meter_reading_normal_save_success), Toast.LENGTH_LONG)
 				 .show();
 			abort(view);
@@ -75,16 +84,18 @@ public class MeterReading extends ActionBarActivity {
 			return;
 		}
 		
-		if(saveLocally() == true) {
+		if(saveLocally(2) == true) {
 			EditText valueField = (EditText) findViewById(R.id.editText1);
 			long value = Long.parseLong(valueField.getText().toString().trim());
 			
 			String lastName = Settings.getLastNameByQuery();
 			ParseQuery<Meter> query = Meter.getQuery();
 			query.fromLocalDatastore();
+			query.whereEqualTo(Meter.COLUMN_ID, objectID);
 			Meter meter = null;
 			try {
-				meter = query.get(objectID);
+				List<Meter> results = query.find();
+				meter = results.get(0);
 			} catch (ParseException e) {
 				//ignore
 			}
@@ -110,6 +121,19 @@ public class MeterReading extends ActionBarActivity {
 				public void done(ParseException arg0) {
 					dialog.dismiss();
 					if(arg0 == null) {
+						ParseQuery<de.pb92.snapshotmeter.parse.MeterReading> query = 
+								de.pb92.snapshotmeter.parse.MeterReading.getQuery();
+						query.fromLocalDatastore();
+						query.whereEqualTo(Meter.COLUMN_ID, idLocally);
+						List<de.pb92.snapshotmeter.parse.MeterReading> results;
+						try {
+							results = query.find();
+							de.pb92.snapshotmeter.parse.MeterReading meterReading = results.get(0);
+							meterReading.setTransmitted(true);
+							meterReading.pin();
+						} catch (ParseException e) {
+							//ignore
+						}
 						Toast.makeText(getBaseContext(), getString(R.string.meter_reading_normal_send_success), Toast.LENGTH_LONG)
 						 .show();
 						abort(view);
@@ -123,7 +147,7 @@ public class MeterReading extends ActionBarActivity {
 	}
 	
 	
-	private boolean saveLocally() {
+	private boolean saveLocally(int type) {
 		EditText valueField = (EditText) findViewById(R.id.editText1);
 		String valueText = valueField.getText().toString().trim();
 		
@@ -137,22 +161,27 @@ public class MeterReading extends ActionBarActivity {
 		String lastName = Settings.getLastNameByQuery();
 		
 		if(lastName == null) {
-			NoLastNameDialogFragment dialog = new NoLastNameDialogFragment();
+			NoLastNameDialogFragment dialog = new NoLastNameDialogFragment(type);
 			dialog.show(getSupportFragmentManager(), "last name dialog");
 			return false;
 		}
 		
 		ParseQuery<Meter> query = Meter.getQuery();
 		query.fromLocalDatastore();
+		query.whereEqualTo(Meter.COLUMN_ID, objectID);
 		Meter meter;
 		try {
-			meter = query.get(objectID);
+			List<Meter> results = query.find();
+			meter = results.get(0);
 			de.pb92.snapshotmeter.parse.MeterReading meterReading = 
 					new de.pb92.snapshotmeter.parse.MeterReading();
 			meterReading.setLastName(lastName);
 			meterReading.setMeterNumber(meter.getMeterNumber());
 			meterReading.setProvider(meter.getProvider());
 			meterReading.setTransmitted(false);
+			meterReading.setID();
+			meterReading.setReadingDate(new Date());
+			idLocally = meterReading.getID();
 			meterReading.setValue(value);
 			meterReading.pin();
 		} catch (ParseException e) {
@@ -164,6 +193,13 @@ public class MeterReading extends ActionBarActivity {
 	}
 	
 	class NoLastNameDialogFragment extends DialogFragment {
+		
+		int type;
+		
+		public NoLastNameDialogFragment(int type) {
+			this.type = type;
+		}
+		
 	    @Override
 	    public Dialog onCreateDialog(Bundle savedInstanceState) {
 	    	AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
@@ -184,7 +220,11 @@ public class MeterReading extends ActionBarActivity {
 							} catch (ParseException e) {
 								//error
 							}
-							saveValue(getView());
+							if(type == 1) {
+								saveValue(getView());
+							} else {
+								sendValue(getView());
+							}
 							dialog.dismiss();
 						} else {
 							Toast.makeText(getBaseContext(), getString(R.string.meter_reading_quick_no_lastname), Toast.LENGTH_LONG)

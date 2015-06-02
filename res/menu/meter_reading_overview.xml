@@ -2,5 +2,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="de.pb92.snapshotmeter.MeterReadingOverview" >
+    <item android:id="@+id/action_property" android:visible="true" android:title="@string/title_meter_reading_overview_property"></item>
 
 </menu>

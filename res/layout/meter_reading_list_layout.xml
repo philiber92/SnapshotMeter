@@ -20,6 +20,7 @@
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
         android:layout_marginRight="5dp"
+        android:visibility="invisible"
         android:text="@string/meter_reading_show" />
 
 </RelativeLayout>

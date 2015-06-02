@@ -523,5 +523,24 @@
 	<string name="meter_reading_normal_no_value">Bitten geben Sie Ihren Zählerstand an!</string>
 	<string name="meter_reading_normal_error_save">Es trat ein Fehler auf! Bitte versuchen Sie es später erneut!</string>
 	<string name="meter_reading_normal_save_success">Der Zählerstand wurde erfolgreich gespeichert!</string>
-	<string name="meter_reading_normal_send_success">Der Zählerstand wurde erfolgreich versandt!</string>
+	<string name="meter_reading_normal_send_success">Der Zählerstand wurde erfolgreich gesendet!</string>
+	<string name="title_meter_reading_overview_property">CameraSnapshot</string>
+	<string name="meter_reading_overview_property_title">Zählereigenschaften</string>
+	<string name="meter_reading_overview_property_number">Zählernummer:</string>
+	<string name="meter_reading_overview_property_provider">Stadtwerke:</string>
+	<string name="meter_reading_overview_property_ok">OK</string>
+	<string name="meter_reading_delete">Löschen</string>
+	<string name="meter_detail_prompt_delete_title">Zählerstand löschen</string>
+	<string name="meter_detail_prompt_delete_message">Soll dieser Zählerstand wirklich gelöscht werden? Dieser Prozess ist unwiderruflich!</string>
+	<string name="meter_detail_prompt_delete_yes">Ja</string>
+	<string name="meter_detail_prompt_delete_no">Nein</string>
+	<string name="meter_detail_prompt_delete_success">Zählertand wurde erfolgreich gelöscht!</string>
+	<string name="meter_detail_prompt_delete_failure">Zählerstand konnte nicht gelöscht werden! Bitte probieren Sie es später erneut!</string>
+	<string name="meter_detail_prompt_send_title">Zählerstand senden</string>
+	<string name="meter_detail_prompt_send_message">Soll dieser Zählerstand wirklich gesendet werden?</string>
+	<string name="meter_detail_prompt_send_yes">Senden</string>
+	<string name="meter_detail_prompt_send_no">Abbrechen</string>
+	<string name="meter_detail_prompt_send_success">Zählertand wurde erfolgreich gesendet!</string>
+	<string name="meter_detail_prompt_send_failure">Zählerstand konnte nicht gesendet werden! Bitte probieren Sie es später erneut!</string>
+	
 </resources>
