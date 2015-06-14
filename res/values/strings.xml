@@ -35,397 +35,785 @@
     <string name="feedback_radio_no">nein</string>
 
     <string-array name="settings_providers">
-        <item>Dessauer Stromversorgung GmbH</item>
-        <item>DEW21 (Dortmunder Energie- und Wasserversorgung GmbH)</item>
-        <item>DREWAG - Stadtwerke Dresden GmbH</item>
-        <item>Eisenacher Versorgungs-Betriebe GmbH</item>
-        <item>Gemeinde-Elektrizitäts- und Wasserwerk Burtenbach</item>
-        <item>GemeindeStrom Wadgassen GmbH</item>
-        <item>Gemeindewerke Ammerbuch GmbH</item>
-        <item>Gemeindewerke Bad Sassendorf GmbH &amp; Co. KG</item>
-        <item>Gemeindewerke Baiersbronn</item>
-        <item>Gemeindewerke Bobenheim-Roxheim GmbH</item>
-        <item>Gemeindewerke Dudenhofen</item>
-        <item>Gemeindewerke Ebersdorf</item>
-        <item>Gemeindewerke Enkenbach-Alsenborn</item>
-        <item>Gemeindewerke Eppelborn GmbH &amp; Co. KG</item>
-        <item>Gemeindewerke Frammersbach</item>
-        <item>Gemeindewerke Grefrath GmbH</item>
-        <item>Gemeindewerke Großkrotzenburg GmbH</item>
-        <item>Gemeindewerke Haßloch GmbH</item>
-        <item>Gemeindewerke Hermaringen GmbH</item>
-        <item>Gemeindewerke Herxheim</item>
-        <item>Gemeindewerke Hettenleidelheim</item>
-        <item>Gemeindewerke Heusweiler GmbH</item>
-        <item>Gemeindewerke Hördt</item>
-        <item>Gemeindewerke Hütschenhausen c/o Stadtwerke Ramstein-Miesenbach GmbH</item>
-        <item>Gemeindewerke Kirkel GmbH</item>
-        <item>Gemeindewerke Kleinblittersdorf GmbH &amp; Co. KG</item>
-        <item>Gemeindewerke Krauchenwies</item>
-        <item>Gemeindewerke Krickenbach c/o Technische Werke Kaiserslautern</item>
-        <item>Gemeindewerke Lambsheim</item>
-        <item>Gemeindewerke Münchweiler a. d. Rodalb AöR</item>
-        <item>Gemeindewerke Niefern-Öschelbronn</item>
-        <item>Gemeindewerke Nüdlingen</item>
-        <item>Gemeindewerke Oberhaching GmbH</item>
-        <item>Gemeindewerke Obrigheim c/o Verbandsgemeinde Grünstadt-Land</item>
-        <item>Gemeindewerke Partenstein</item>
-        <item>Gemeindewerke Rheinzabern</item>
-        <item>Gemeindewerke Schönkirchen GmbH</item>
-        <item>Gemeindewerke Schutterwald</item>
-        <item>Gemeindewerke Schwalbach GmbH</item>
-        <item>Gemeindewerke St. Michel-Energie GmbH</item>
-        <item>Gemeindewerke Steinhagen GmbH</item>
-        <item>Gemeindewerke Steißlingen</item>
-        <item>Gemeindewerke Stelzenberg c/o Technische Werke Kaiserslautern</item>
-        <item>Gemeindewerke Stockstadt</item>
-        <item>Gemeindewerke Waging</item>
-        <item>Gemeindewerke Waldfischbach-Burgalben</item>
-        <item>Gemeindewerke Weidenthal</item>
-        <item>Gemeindewerke Wickede (Ruhr) GmbH</item>
-        <item>GSW Gemeinschaftsstadtwerke GmbH Kamen-Bönen-Bergkamen</item>
-        <item>HALBERSTADTWERKE GmbH</item>
-        <item>Hertener Stadtwerke GmbH</item>
-        <item>Kommunalunternehmen Gemeindewerke Peißenberg</item>
-        <item>Meißener Stadtwerke GmbH</item>
-        <item>nvb Nordhorner Versorgungsbetriebe GmbH</item>
-        <item>SSW-Stadtwerke St. Wendel GmbH &amp; Co. KG</item>
-        <item>Stadt- und Überlandwerke GmbH Luckau-Lübbenau</item>
-        <item>Städtische Betriebswerke Luckenwalde GmbH</item>
-        <item>Städtische Werke Borna GmbH</item>
-        <item>Städtische Werke Lauf a.d. Pegnitz GmbH</item>
-        <item>Städtische Werke Magdeburg GmbH &amp; Co. KG</item>
-        <item>Städtische Werke Spremberg (Lausitz) GmbH</item>
-        <item>Stadtwerk am See GmbH &amp; Co. KG</item>
-        <item>STADTWERK AM SEE GmbH &amp; Co. KG -Bodensee Energie-</item>
-        <item>Stadtwerk Külsheim GmbH</item>
-        <item>Stadtwerk Tauberfranken GmbH</item>
-        <item>Stadtwerke - Altmärkische Gas-, Wasser- und Elektrizitätswerke Stendal GmbH</item>
-        <item>Stadtwerke - Strom Plauen GmbH &amp; Co. KG</item>
-        <item>Stadtwerke Aalen GmbH</item>
-        <item>Stadtwerke Ahaus GmbH</item>
-        <item>Stadtwerke Ahlen GmbH</item>
-        <item>Stadtwerke Altensteig</item>
-        <item>Stadtwerke Amberg Versorgungs GmbH</item>
-        <item>Stadtwerke Andernach GmbH</item>
-        <item>Stadtwerke Annaberg-Buchholz Energie AG</item>
-        <item>Stadtwerke Annweiler am Trifels</item>
-        <item>Stadtwerke Arnsberg Vertriebs und Energiedienstleistungs GmbH</item>
-        <item>Stadtwerke Arnstadt GmbH</item>
-        <item>Stadtwerke Aschersleben GmbH</item>
-        <item>Stadtwerke Aue GmbH</item>
-        <item>Stadtwerke Augsburg Energie GmbH</item>
-        <item>Stadtwerke Backnang GmbH</item>
-        <item>Stadtwerke Bad Bergzabern GmbH</item>
-        <item>Stadtwerke Bad Brückenau GmbH</item>
-        <item>Stadtwerke Bad Dürkheim GmbH</item>
-        <item>Stadtwerke Bad Harzburg GmbH</item>
-        <item>Stadtwerke Bad Herrenalb GmbH</item>
-        <item>Stadtwerke Bad Kissingen GmbH</item>
-        <item>Stadtwerke Bad Langensalza GmbH</item>
-        <item>Stadtwerke Bad Lauterberg im Harz GmbH</item>
-        <item>Stadtwerke Bad Neustadt a.d. Saale</item>
-        <item>Stadtwerke Bad Pyrmont Energie &amp; Verkehrs GmbH</item>
-        <item>Stadtwerke Bad Rodach</item>
-        <item>Stadtwerke Bad Sachsa GmbH</item>
-        <item>Stadtwerke Bad Säckingen GmbH</item>
-        <item>Stadtwerke Bad Salzdetfurth GmbH</item>
-        <item>Stadtwerke Bad Vilbel GmbH</item>
-        <item>Stadtwerke Bad Wildbad GmbH &amp; Co. KG</item>
-        <item>Stadtwerke Balingen</item>
-        <item>Stadtwerke Bamberg Energie- und Wasserversorgungs GmbH</item>
-        <item>Stadtwerke Barmstedt</item>
-        <item>Stadtwerke Barmstedt Vertrieb GmbH</item>
-        <item>Stadtwerke Barth GmbH</item>
-        <item>Stadtwerke Bernau GmbH</item>
-        <item>Stadtwerke Bernburg GmbH</item>
-        <item>Stadtwerke Bexbach GmbH</item>
-        <item>Stadtwerke Bielefeld GmbH</item>
-        <item>Stadtwerke Bietigheim-Bissingen GmbH</item>
-        <item>Stadtwerke Bitterfeld-Wolfen GmbH</item>
-        <item>Stadtwerke Bliestal GmbH</item>
-        <item>Stadtwerke Böblingen GmbH &amp; Co. KG</item>
-        <item>Stadtwerke Bochum GmbH</item>
-        <item>Stadtwerke Bogen GmbH</item>
-        <item>Stadtwerke Böhmetal GmbH</item>
-        <item>Stadtwerke Borken/Westf. GmbH</item>
-        <item>Stadtwerke Bramsche GmbH</item>
-        <item>Stadtwerke Brandenburg an der Havel GmbH</item>
-        <item>Stadtwerke Bräunlingen</item>
-        <item>Stadtwerke Bretten GmbH</item>
-        <item>Stadtwerke Brühl GmbH</item>
-        <item>Stadtwerke Buchen GmbH &amp; Co KG</item>
-        <item>Stadtwerke Buchholz i.d.N. GmbH</item>
-        <item>Stadtwerke Bühl GmbH</item>
-        <item>Stadtwerke Burgbernheim</item>
-        <item>Stadtwerke Burgdorf GmbH</item>
-        <item>Stadtwerke Buxtehude GmbH</item>
-        <item>Stadtwerke Cham GmbH</item>
-        <item>Stadtwerke Coesfeld GmbH</item>
-        <item>Stadtwerke Cottbus GmbH</item>
-        <item>Stadtwerke Crailsheim GmbH</item>
-        <item>Stadtwerke Dachau</item>
-        <item>Stadtwerke Deggendorf GmbH</item>
-        <item>Stadtwerke Deidesheim GmbH</item>
-        <item>Stadtwerke Detmold GmbH</item>
-        <item>Stadtwerke Dillingen/Saar GmbH</item>
-        <item>Stadtwerke Dinslaken GmbH</item>
-        <item>Stadtwerke Ditzingen GmbH &amp; Co. KG</item>
-        <item>Stadtwerke Döbeln GmbH</item>
-        <item>Stadtwerke Dorfen GmbH</item>
-        <item>Stadtwerke Duisburg AG</item>
-        <item>Stadtwerke Dülmen GmbH</item>
-        <item>Stadtwerke Düren GmbH</item>
-        <item>Stadtwerke Eberbach</item>
-        <item>Stadtwerke Ebermannstadt Versorgungsbetriebe GmbH</item>
-        <item>STADTWERKE EICHSTÄTT VERSORGUNGS-GMBH</item>
-        <item>Stadtwerke Eilenburg GmbH</item>
-        <item>Stadtwerke Eisenberg GmbH</item>
-        <item>Stadtwerke Elbtal GmbH</item>
-        <item>Stadtwerke Elm-Lappwald GmbH</item>
-        <item>Stadtwerke Elzach</item>
-        <item>Stadtwerke Emden GmbH</item>
-        <item>Stadtwerke Emmerich GmbH</item>
-        <item>Stadtwerke Emsdetten GmbH</item>
-        <item>Stadtwerke Energie Jena-Pößneck GmbH</item>
-        <item>Stadtwerke Energie Verbund SEV GmbH</item>
-        <item>Stadtwerke Engen GmbH</item>
-        <item>Stadtwerke Erkrath GmbH</item>
-        <item>Stadtwerke EVB Huntetal GmbH</item>
-        <item>Stadtwerke Feuchtwangen</item>
-        <item>Stadtwerke Finsterwalde GmbH</item>
-        <item>Stadtwerke Flensburg GmbH</item>
-        <item>Stadtwerke Forchheim GmbH</item>
-        <item>Stadtwerke Frankenthal GmbH</item>
-        <item>Stadtwerke Frankfurt (Oder) GmbH</item>
-        <item>Stadtwerke Freiberg a.N. Vertriebs-GmbH</item>
-        <item>Stadtwerke Freudenstadt GmbH &amp; Co. KG</item>
-        <item>Stadtwerke Friedrichsthal GmbH &amp; Co. KG</item>
-        <item>Stadtwerke Fröndenberg GmbH</item>
-        <item>Stadtwerke Fürstenfeldbruck GmbH</item>
-        <item>Stadtwerke Garbsen GmbH</item>
-        <item>Stadtwerke Geldern GmbH</item>
-        <item>Stadtwerke Gelnhausen GmbH</item>
-        <item>Stadtwerke Georgsmarienhütte GmbH</item>
-        <item>Stadtwerke Germersheim GmbH</item>
-        <item>Stadtwerke Gießen AG</item>
-        <item>Stadtwerke Glauchau Dienstleistungsgesellschaft mbH</item>
-        <item>Stadtwerke GmbH Bad Kreuznach</item>
-        <item>Stadtwerke Goch GmbH</item>
-        <item>Stadtwerke Görlitz AG</item>
-        <item>Stadtwerke Gotha GmbH</item>
-        <item>Stadtwerke Grevesmühlen GmbH</item>
-        <item>Stadtwerke Gronau GmbH</item>
-        <item>Stadtwerke Groß-Gerau Versorgungs GmbH</item>
-        <item>Stadtwerke Grünstadt GmbH</item>
-        <item>Stadtwerke Güstrow GmbH</item>
-        <item>Stadtwerke Gütersloh GmbH</item>
-        <item>Stadtwerke Haiger</item>
-        <item>Stadtwerke Haltern am See GmbH</item>
-        <item>Stadtwerke Hamm GmbH</item>
-        <item>Stadtwerke Hammelburg GmbH</item>
-        <item>Stadtwerke Hanau GmbH</item>
-        <item>Stadtwerke Hannover AG</item>
-        <item>Stadtwerke Hattingen GmbH</item>
-        <item>Stadtwerke Heidelberg Energie GmbH</item>
-        <item>Stadtwerke Heidenheim AG</item>
-        <item>Stadtwerke Heilbad Heiligenstadt GmbH</item>
-        <item>Stadtwerke Herford GmbH</item>
-        <item>Stadtwerke Herne AG</item>
-        <item>Stadtwerke Hettstedt GmbH</item>
-        <item>Stadtwerke Hockenheim</item>
-        <item>Stadtwerke Homburg GmbH</item>
-        <item>Stadtwerke Hüfingen</item>
-        <item>Stadtwerke Hünfeld GmbH</item>
-        <item>Stadtwerke Ilmenau GmbH</item>
-        <item>Stadtwerke Iserlohn GmbH</item>
-        <item>Stadtwerke Jülich GmbH</item>
-        <item>Stadtwerke Kamp-Lintfort GmbH</item>
-        <item>Stadtwerke Karlsruhe GmbH</item>
-        <item>Stadtwerke Kempen GmbH</item>
-        <item>Stadtwerke Kiel AG</item>
-        <item>Stadtwerke Kirn GmbH</item>
-        <item>Stadtwerke Kleve GmbH</item>
-        <item>Stadtwerke Klingenberg Kommunalunternehmen AöR</item>
-        <item>Stadtwerke Konstanz GmbH</item>
-        <item>Stadtwerke Kusel GmbH</item>
-        <item>Stadtwerke Lage GmbH</item>
-        <item>Stadtwerke Lambrecht (Pfalz) GmbH</item>
-        <item>Stadtwerke Landsberg KU</item>
-        <item>Stadtwerke Laufenburg</item>
-        <item>Stadtwerke Lauterbach GmbH</item>
-        <item>Stadtwerke Lebach GmbH &amp; Co. KG</item>
-        <item>Stadtwerke Leinefelde GmbH</item>
-        <item>Stadtwerke Leipzig GmbH</item>
-        <item>Stadtwerke Lengerich GmbH</item>
-        <item>Stadtwerke Lindau (B) GmbH &amp; Co. KG</item>
-        <item>Stadtwerke Lingen GmbH</item>
-        <item>Stadtwerke Löbau GmbH</item>
-        <item>Stadtwerke Löffingen</item>
-        <item>Stadtwerke Lohmar GmbH &amp; Co. KG</item>
-        <item>Stadtwerke Lübbecke GmbH</item>
-        <item>Stadtwerke Lübz GmbH</item>
-        <item>Stadtwerke Lüdenscheid GmbH</item>
-        <item>Stadtwerke Ludwigsburg-Kornwestheim GmbH</item>
-        <item>Stadtwerke Ludwigsfelde GmbH</item>
-        <item>Stadtwerke Lünen GmbH</item>
-        <item>Stadtwerke Lutherstadt Eisleben GmbH</item>
-        <item>Stadtwerke Lutherstadt Wittenberg GmbH</item>
-        <item>Stadtwerke Meiningen GmbH</item>
-        <item>Stadtwerke Menden GmbH</item>
-        <item>Stadtwerke Mengen</item>
-        <item>Stadtwerke Merseburg GmbH</item>
-        <item>Stadtwerke Merzig GmbH</item>
-        <item>Stadtwerke Metzingen</item>
-        <item>Stadtwerke Mosbach GmbH</item>
-        <item>Stadtwerke Mühlacker GmbH</item>
-        <item>Stadtwerke Mühldorf a. Inn GmbH &amp; Co. KG</item>
-        <item>Stadtwerke Mühlhausen GmbH</item>
-        <item>Stadtwerke Mühlheim am Main GmbH</item>
-        <item>Stadtwerke MüllheimStaufen GmbH</item>
-        <item>Stadtwerke Münster GmbH</item>
-        <item>Stadtwerke Munster-Bispingen GmbH</item>
-        <item>Stadtwerke Nettetal GmbH</item>
-        <item>Stadtwerke Neuburg a. d. Donau</item>
-        <item>Stadtwerke Neuffen AG</item>
-        <item>Stadtwerke Neu-Isenburg GmbH</item>
-        <item>Stadtwerke Neuruppin GmbH</item>
-        <item>Stadtwerke Neuss Energie und Wasser GmbH</item>
-        <item>Stadtwerke Neustadt an der Weinstraße GmbH</item>
-        <item>Stadtwerke Neustrelitz GmbH</item>
-        <item>Stadtwerke Niesky GmbH</item>
-        <item>Stadtwerke Norderney GmbH</item>
-        <item>Stadtwerke Nürtingen GmbH</item>
-        <item>Stadtwerke Oberriexingen GmbH</item>
-        <item>Stadtwerke Ochtrup</item>
-        <item>Stadtwerke OELSNITZ/V. GmbH</item>
-        <item>Stadtwerke Olbernhau GmbH</item>
-        <item>Stadtwerke Olching GmbH</item>
-        <item>Stadtwerke Oranienburg GmbH</item>
-        <item>Stadtwerke Osnabrück AG</item>
-        <item>Stadtwerke Parchim GmbH</item>
-        <item>Stadtwerke Pasewalk GmbH</item>
-        <item>Stadtwerke Pfarrkirchen</item>
-        <item>Stadtwerke Pfullendorf GmbH</item>
-        <item>Stadtwerke Pirmasens Versorgungs GmbH</item>
-        <item>Stadtwerke Pirna GmbH</item>
-        <item>Stadtwerke Plattling</item>
-        <item>Stadtwerke Porta Westfalica GmbH</item>
-        <item>Stadtwerke Prenzlau GmbH</item>
-        <item>Stadtwerke Pulheim GmbH</item>
-        <item>Stadtwerke Quedlinburg GmbH</item>
-        <item>Stadtwerke Quickborn GmbH</item>
-        <item>Stadtwerke Radevormwald GmbH</item>
-        <item>Stadtwerke Radolfzell GmbH</item>
-        <item>Stadtwerke Ramstein-Miesenbach GmbH</item>
-        <item>Stadtwerke Ratingen GmbH</item>
-        <item>Stadtwerke Reichenbach/Vogtl. GmbH</item>
-        <item>Stadtwerke Rhede GmbH</item>
-        <item>Stadtwerke Riesa GmbH</item>
-        <item>Stadtwerke Rosenheim Versorgungs GmbH</item>
-        <item>StadtWerke Rösrath - Energie GmbH</item>
-        <item>Stadtwerke Rostock AG</item>
-        <item>Stadtwerke Röthenbach a. d. Pegnitz GmbH</item>
-        <item>Stadtwerke Rottenburg am Neckar GmbH</item>
-        <item>Stadtwerke Saalfeld GmbH</item>
-        <item>Stadtwerke Saarlouis GmbH</item>
-        <item>Stadtwerke Sangerhausen GmbH</item>
-        <item>Stadtwerke Schifferstadt</item>
-        <item>Stadtwerke Schneeberg GmbH</item>
-        <item>Stadtwerke Schneverdingen-Neuenkirchen GmbH</item>
-        <item>Stadtwerke Schönebeck GmbH</item>
-        <item>Stadtwerke Schorndorf GmbH</item>
-        <item>Stadtwerke Schramberg GmbH &amp; Co. KG</item>
-        <item>Stadtwerke Schüttorf GmbH</item>
-        <item>Stadtwerke Schwäbisch Hall GmbH</item>
-        <item>Stadtwerke Schwarzenberg GmbH</item>
-        <item>Stadtwerke Schwedt GmbH</item>
-        <item>Stadtwerke Schweinfurt GmbH</item>
-        <item>Stadtwerke Schwerin GmbH</item>
-        <item>Stadtwerke Schwerte GmbH</item>
-        <item>Stadtwerke Schwetzingen GmbH &amp; Co. KG</item>
-        <item>Stadtwerke Senftenberg GmbH</item>
-        <item>Stadtwerke Sindelfingen GmbH</item>
-        <item>Stadtwerke Soest GmbH</item>
-        <item>Stadtwerke Solingen GmbH</item>
-        <item>Stadtwerke Sondershausen GmbH</item>
-        <item>Stadtwerke Speyer GmbH</item>
-        <item>Stadtwerke Springe GmbH</item>
-        <item>Stadtwerke St. Ingbert GmbH</item>
-        <item>Stadtwerke Stade GmbH</item>
-        <item>Stadtwerke Stadtroda GmbH</item>
-        <item>Stadtwerke Staßfurt GmbH</item>
-        <item>Stadtwerke Stockach GmbH</item>
-        <item>Stadtwerke Straubing Strom und Gas GmbH</item>
-        <item>Stadtwerke Strausberg GmbH</item>
-        <item>Stadtwerke Suhl/Zella-Mehlis GmbH</item>
-        <item>Stadtwerke Sulzbach/Saar GmbH</item>
-        <item>Stadtwerke Teterow GmbH</item>
-        <item>Stadtwerke Thale GmbH</item>
-        <item>Stadtwerke Torgau GmbH</item>
-        <item>Stadtwerke Troisdorf GmbH</item>
-        <item>Stadtwerke Trostberg Stromversorgung GmbH</item>
-        <item>Stadtwerke Tübingen GmbH</item>
-        <item>Stadtwerke Tuttlingen GmbH</item>
-        <item>Stadtwerke Uelzen GmbH</item>
-        <item>STADTWERKE UNNA GMBH</item>
-        <item>Stadtwerke Velbert GmbH</item>
-        <item>Stadtwerke Velten GmbH</item>
-        <item>Stadtwerke Verden GmbH</item>
-        <item>Stadtwerke Viernheim GmbH</item>
-        <item>Stadtwerke Villingen-Schwenningen GmbH</item>
-        <item>Stadtwerke Vilsbiburg</item>
-        <item>Stadtwerke Völklingen Vertrieb GmbH</item>
-        <item>Stadtwerke Wachenheim</item>
-        <item>Stadtwerke Wadern GmbH</item>
-        <item>Stadtwerke Waiblingen GmbH</item>
-        <item>Stadtwerke Waldkirch GmbH</item>
-        <item>Stadtwerke Waldshut-Tiengen GmbH</item>
-        <item>Stadtwerke Walldorf GmbH &amp; Co. KG</item>
-        <item>Stadtwerke Walldürn GmbH</item>
-        <item>Stadtwerke Waltrop GmbH &amp; Co. KG</item>
-        <item>Stadtwerke Wedel GmbH</item>
-        <item>Stadtwerke Weimar Stadtversorgungs-GmbH</item>
-        <item>Stadtwerke Weinheim GmbH</item>
-        <item>Stadtwerke Weißenburg GmbH</item>
-        <item>Stadtwerke Weißenfels GmbH</item>
-        <item>Stadtwerke Weißwasser GmbH</item>
-        <item>Stadtwerke Werdau GmbH</item>
-        <item>Stadtwerke Werl GmbH</item>
-        <item>Stadtwerke Willich GmbH</item>
-        <item>Stadtwerke Winnenden GmbH</item>
-        <item>Stadtwerke Winsen (Luhe) GmbH</item>
-        <item>Stadtwerke Wismar GmbH</item>
-        <item>Stadtwerke Wissen GmbH</item>
-        <item>Stadtwerke Witten GmbH</item>
-        <item>Stadtwerke Wolmirstedt GmbH</item>
-        <item>Stadtwerke Wunstorf GmbH &amp; Co. KG</item>
-        <item>Stadtwerke Würzburg AG</item>
-        <item>Stadtwerke Zeil a. Main</item>
-        <item>Stadtwerke Zeitz GmbH</item>
-        <item>Stadtwerke Zeven GmbH</item>
-        <item>Stadtwerke Zittau GmbH</item>
-        <item>Stadtwerke Zweibrücken GmbH</item>
-        <item>STAWAG - Stadtwerke Aachen AG</item>
-        <item>SWB Energie- und Wasserversorgung Bonn/Rhein Sieg GmbH</item>
-        <item>swb Vertrieb Bremen GmbH</item>
-        <item>swb Vertrieb Bremerhaven GmbH &amp; Co. KG</item>
-        <item>SWE Energie GmbH</item>
-        <item>SWK Stadtwerke Kaiserslautern Versorgungs-AG</item>
-        <item>SWL Vertriebsgesellschaft mbh</item>
-        <item>SWM Versorgungs GmbH</item>
-        <item>SWN Stadtwerke Neumünster GmbH</item>
-        <item>SWN Stadtwerke Neustadt GmbH</item>
-        <item>SWS Energie GmbH</item>
-        <item>SWT Stadtwerke Trier Versorgungs-GmbH</item>
-        <item>Technische Werke Delitzsch GmbH</item>
-        <item>Technische Werke Naumburg GmbH</item>
-        <item>Technische Werke Schussental GmbH &amp; Co. KG</item>
-        <item>Verbands- und Gemeindewerke Rülzheim</item>
-        <item>Verbandsgemeindewerk Dannstadt-Schauernheim</item>
-        <item>Verbandsgemeindewerke Dahner Felsenland</item>
-        <item>Verbandsgemeindewerke Eisenberg (Pfalz)</item>
-        <item>Verbandsgemeindewerke Enkenbach-Alsenborn</item>
+        <item>Aachen</item>
+		<item>Aalen</item>
+		<item>Achim</item>
+		<item>Ahaus</item>
+		<item>Ahlen</item>
+		<item>Ainring</item>
+		<item>Albstadt</item>
+		<item>Alerheim</item>
+		<item>Altdorf</item>
+		<item>Altenburg</item>
+		<item>Altensteig</item>
+		<item>Altheim</item>
+		<item>Alzenau</item>
+		<item>Alzey</item>
+		<item>Amberg</item>
+		<item>Andernach</item>
+		<item>Angermünde</item>
+		<item>Annaberg-Buchholz</item>
+		<item>Annweiler</item>
+		<item>Ansbach</item>
+		<item>Apolda</item>
+		<item>Arneburg</item>
+		<item>Arnstadt</item>
+		<item>Arrach</item>
+		<item>Aschaffenburg</item>
+		<item>Aschersleben</item>
+		<item>Attendorn</item>
+		<item>Aue</item>
+		<item>Augsburg</item>
+		<item>Bad</item>
+		<item>Bad Aibling</item>
+		<item>Bad Bergzabern</item>
+		<item>Bad Bramstedt</item>
+		<item>Bad Brückenau</item>
+		<item>Bad Dürkheim</item>
+		<item>Bad Endorf</item>
+		<item>Bad Harzburg</item>
+		<item>Bad Herrenalb</item>
+		<item>Bad Hersfeld</item>
+		<item>Bad Hindelang</item>
+		<item>Bad Honnef</item>
+		<item>Bad Kissingen</item>
+		<item>Bad Langensalza</item>
+		<item>Bad Lauterberg</item>
+		<item>Bad Mergentheim</item>
+		<item>Bad Nauheim</item>
+		<item>Bad Neustadt</item>
+		<item>Bad Pyrmont</item>
+		<item>Bad Reichenhall</item>
+		<item>Bad Rodach</item>
+		<item>Bad Sachsa</item>
+		<item>Bad Säckingen</item>
+		<item>Bad Salzuflen</item>
+		<item>Bad Saulgau</item>
+		<item>Bad Segeberg</item>
+		<item>Bad Sooden-Allendorf</item>
+		<item>Bad Tölz</item>
+		<item>Bad Vilbel</item>
+		<item>Bad Wildbad</item>
+		<item>Bad Windsheim</item>
+		<item>Bad Wörishofen</item>
+		<item>Baden-Baden</item>
+		<item>Baiersbronn</item>
+		<item>Baiersdorf</item>
+		<item>Balingen</item>
+		<item>Bamberg</item>
+		<item>Barmstedt</item>
+		<item>Bautzen</item>
+		<item>Bayerisch Gmain</item>
+		<item>Bayreuth</item>
+		<item>Bebra</item>
+		<item>Beckum</item>
+		<item>Bensheim</item>
+		<item>Bergisch</item>
+		<item>Berlin</item>
+		<item>Bernau</item>
+		<item>Bernburg</item>
+		<item>Bexbach</item>
+		<item>Biberach</item>
+		<item>Biedenkopf</item>
+		<item>Bielefeld</item>
+		<item>Bietigheim-Bissingen</item>
+		<item>Bitterfeld-Wolfen</item>
+		<item>Blankenburg</item>
+		<item>Blieskastel</item>
+		<item>Blomberg</item>
+		<item>Blumberg</item>
+		<item>Böbing</item>
+		<item>Bocholt</item>
+		<item>Bochum</item>
+		<item>Bogen</item>
+		<item>Bonn</item>
+		<item>Bordesholm</item>
+		<item>Borken</item>
+		<item>Borkum</item>
+		<item>Borna</item>
+		<item>Bovenden</item>
+		<item>Bramsche</item>
+		<item>Brandenburg an der Havel</item>
+		<item>Brannenburg</item>
+		<item>Bräunlingen</item>
+		<item>Braunschweig</item>
+		<item>Bredstedt</item>
+		<item>Bremen</item>
+		<item>Bremerhaven</item>
+		<item>Bretten</item>
+		<item>Bruchmühlbach-Miesau</item>
+		<item>Bruchsal</item>
+		<item>Brühl</item>
+		<item>Brunsbüttel</item>
+		<item>Buchbach</item>
+		<item>Buchen</item>
+		<item>Buchholz</item>
+		<item>Bückeburg</item>
+		<item>Budenheim</item>
+		<item>Bühl</item>
+		<item>Burg</item>
+		<item>Burgbernheim</item>
+		<item>Burgdorf</item>
+		<item>Burgkirchen</item>
+		<item>Burtenbach</item>
+		<item>Butzbach</item>
+		<item>Buxtehude</item>
+		<item>Cadolzburg</item>
+		<item>Calw</item>
+		<item>Celle</item>
+		<item>Cham</item>
+		<item>Chemnitz</item>
+		<item>Clausthal-Zellerfeld</item>
+		<item>Coburg</item>
+		<item>Coesfeld</item>
+		<item>Cottbus</item>
+		<item>Crailsheim</item>
+		<item>Dachau</item>
+		<item>Dahlenburg</item>
+		<item>Dahn</item>
+		<item>Dannenberg</item>
+		<item>Dannstadt-Schauernheim</item>
+		<item>Darmstadt</item>
+		<item>Deggendorf</item>
+		<item>Deidesheim</item>
+		<item>Delitzsch</item>
+		<item>Dessau</item>
+		<item>Detmold</item>
+		<item>Dettelbach</item>
+		<item>Diepholz</item>
+		<item>Dießen</item>
+		<item>Dillingen</item>
+		<item>Dingolfing</item>
+		<item>Dinkelsbühl</item>
+		<item>Döbeln</item>
+		<item>Dorfen</item>
+		<item>Dortmund</item>
+		<item>Dotternhausen</item>
+		<item>Dreieich</item>
+		<item>Dresden</item>
+		<item>Dudenhofen</item>
+		<item>Duderstadt</item>
+		<item>Duisburg</item>
+		<item>Dülmen</item>
+		<item>Düren</item>
+		<item>Düsseldorf</item>
+		<item>Eberbach</item>
+		<item>Ebermannstadt</item>
+		<item>Ebersdorf</item>
+		<item>Eckernförde</item>
+		<item>Edling</item>
+		<item>Effeltrich</item>
+		<item>Egloffstein</item>
+		<item>Ehingen</item>
+		<item>Eichenau</item>
+		<item>Eichstätt</item>
+		<item>Eilenburg</item>
+		<item>Einbeck</item>
+		<item>Eisenach</item>
+		<item>Eisenberg</item>
+		<item>Eisenhüttenstadt</item>
+		<item>Ellwangen</item>
+		<item>Elmshorn</item>
+		<item>Emden</item>
+		<item>Emmendingen</item>
+		<item>Emmerich</item>
+		<item>Emsdetten</item>
+		<item>Engelsberg</item>
+		<item>Engen</item>
+		<item>Enkenbach-Alsenborn</item>
+		<item>Eppelborn</item>
+		<item>Erding</item>
+		<item>Erfurt</item>
+		<item>Erharting</item>
+		<item>Erkrath</item>
+		<item>Erlangen</item>
+		<item>Eschwege</item>
+		<item>Essen</item>
+		<item>Ettlingen</item>
+		<item>Eutin</item>
+		<item>Farchant</item>
+		<item>Fellbach</item>
+		<item>Feucht</item>
+		<item>Feuchtwangen</item>
+		<item>Finsterwalde</item>
+		<item>Flensburg</item>
+		<item>Forchheim</item>
+		<item>Forchtenberg</item>
+		<item>Forst</item>
+		<item>Frammersbach</item>
+		<item>Frankenberg</item>
+		<item>Frankenthal</item>
+		<item>Frankfurt</item>
+		<item>Frasdorf</item>
+		<item>Frechen</item>
+		<item>Freiberg</item>
+		<item>Freiburg</item>
+		<item>Freising</item>
+		<item>Freital</item>
+		<item>Freudenstadt</item>
+		<item>Friedberg</item>
+		<item>Fröndenberg</item>
+		<item>Fulda</item>
+		<item>Fürstenfeldbruck</item>
+		<item>Fürstenwalde</item>
+		<item>Fürth</item>
+		<item>Furth im Wald</item>
+		<item>Füssen</item>
+		<item>Gaggenau</item>
+		<item>Gammertingen</item>
+		<item>Gangkofen</item>
+		<item>Garbsen</item>
+		<item>Garmisch-Partenkirchen</item>
+		<item>Geesthacht</item>
+		<item>Geislingen</item>
+		<item>Gelnhausen</item>
+		<item>Gelsenkirchen</item>
+		<item>Gemünden</item>
+		<item>Gengenbach</item>
+		<item>Georgensgmünd</item>
+		<item>Georgsmarienhütte</item>
+		<item>Gera</item>
+		<item>Germersheim</item>
+		<item>Gersthofen</item>
+		<item>Gevelsberg</item>
+		<item>Gierstädt</item>
+		<item>Gießen</item>
+		<item>Glattbach</item>
+		<item>Glauchau</item>
+		<item>Glückstadt</item>
+		<item>Goch</item>
+		<item>Gochsheim</item>
+		<item>Goldbach</item>
+		<item>Göppingen</item>
+		<item>Görlitz</item>
+		<item>Gotha</item>
+		<item>Grafing</item>
+		<item>Greding</item>
+		<item>Grefrath</item>
+		<item>Greifswald</item>
+		<item>Greiz</item>
+		<item>Greven</item>
+		<item>Grevesmühlen</item>
+		<item>Gronau</item>
+		<item>Groß-Gerau</item>
+		<item>Großkrotzenburg</item>
+		<item>Grünstadt</item>
+		<item>Guben</item>
+		<item>Gundelfingen</item>
+		<item>Gunzenhausen</item>
+		<item>Güstrow</item>
+		<item>Gütersloh</item>
+		<item>Haag i. OB</item>
+		<item>Haar</item>
+		<item>Hagen</item>
+		<item>Hagenow</item>
+		<item>Haiger</item>
+		<item>Haimhausen</item>
+		<item>Halberstadt</item>
+		<item>Halblech</item>
+		<item>Haldensleben</item>
+		<item>Halle</item>
+		<item>Halstenbek</item>
+		<item>Haltern am See</item>
+		<item>Hamburg</item>
+		<item>Hameln</item>
+		<item>Hamm</item>
+		<item>Hammelburg</item>
+		<item>Hanau</item>
+		<item>Hann. Münden</item>
+		<item>Hannover</item>
+		<item>Hardheim</item>
+		<item>Hardt</item>
+		<item>Hasbergen</item>
+		<item>Haslach</item>
+		<item>Haßfurt</item>
+		<item>Haßloch</item>
+		<item>Hattersheim</item>
+		<item>Hauenstein</item>
+		<item>Havelberg</item>
+		<item>Hechingen</item>
+		<item>Heddesheim</item>
+		<item>Heide</item>
+		<item>Heidelberg</item>
+		<item>Heidenheim</item>
+		<item>Heikendorf</item>
+		<item>Heilbad Heiligenstadt</item>
+		<item>Heilbronn</item>
+		<item>Heilsbronn</item>
+		<item>Heinsberg</item>
+		<item>Helmbrechts</item>
+		<item>Helmstedt</item>
+		<item>Hemau</item>
+		<item>Hemer</item>
+		<item>Hemhofen</item>
+		<item>Hengersberg</item>
+		<item>Herborn</item>
+		<item>Herne</item>
+		<item>Heroldsbach</item>
+		<item>Herrenberg</item>
+		<item>Hersbruck</item>
+		<item>Herten</item>
+		<item>Herxheim</item>
+		<item>Herzogenaurach</item>
+		<item>Herzogenrath</item>
+		<item>Hettenleidelheim</item>
+		<item>Hettstedt</item>
+		<item>Hilden</item>
+		<item>Hildesheim</item>
+		<item>Hochspeyer</item>
+		<item>Hockenheim</item>
+		<item>Hof</item>
+		<item>Hollfeld</item>
+		<item>Holzkirchen</item>
+		<item>Homberg</item>
+		<item>Homburg</item>
+		<item>Hoyerswerda</item>
+		<item>Hüfingen</item>
+		<item>Hünfeld</item>
+		<item>Hürth</item>
+		<item>Husum</item>
+		<item>Ilmenau</item>
+		<item>Ingelheim</item>
+		<item>Ingolstadt</item>
+		<item>Inzell</item>
+		<item>Iserlohn</item>
+		<item>Ismaning</item>
+		<item>Itzehoe</item>
+		<item>Jena</item>
+		<item>Jülich</item>
+		<item>Kahl</item>
+		<item>Kaiserslautern</item>
+		<item>Kaltenkirchen</item>
+		<item>Kamen</item>
+		<item>Kamenz</item>
+		<item>Kandern</item>
+		<item>Karlsruhe</item>
+		<item>Karlstadt</item>
+		<item>Kassel</item>
+		<item>Kaufbeuren</item>
+		<item>Kaulsdorf</item>
+		<item>Kelheim</item>
+		<item>Kempen</item>
+		<item>Kempten</item>
+		<item>Kiefersfelden</item>
+		<item>Kiel</item>
+		<item>Kipfenberg</item>
+		<item>Kirchanschöring</item>
+		<item>Kirchheim</item>
+		<item>Kirchzarten</item>
+		<item>Kirkel</item>
+		<item>Kitzingen</item>
+		<item>Kleines Wiesental</item>
+		<item>Klettgau</item>
+		<item>Kleve</item>
+		<item>Klingenberg</item>
+		<item>Koblenz</item>
+		<item>Köln</item>
+		<item>Konstanz</item>
+		<item>Korbach</item>
+		<item>Krauchenwies</item>
+		<item>Krefeld</item>
+		<item>Kronshagen</item>
+		<item>Külsheim</item>
+		<item>Künzelsau</item>
+		<item>Kusel</item>
+		<item>Lahr</item>
+		<item>Lam</item>
+		<item>Lambrecht</item>
+		<item>Lambsheim</item>
+		<item>Landau</item>
+		<item>Landsberg</item>
+		<item>Landshut</item>
+		<item>Langen</item>
+		<item>Langenzenn</item>
+		<item>Lauenburg</item>
+		<item>Lauf</item>
+		<item>Lauterbach</item>
+		<item>Lebach</item>
+		<item>Leck</item>
+		<item>Leipzig</item>
+		<item>Lemgo</item>
+		<item>Lengerich</item>
+		<item>Lenzkirch</item>
+		<item>Leuna</item>
+		<item>Leutershausen</item>
+		<item>Leverkusen</item>
+		<item>Lichtenau</item>
+		<item>Lichtenstein</item>
+		<item>Limburg a.d. Lahn</item>
+		<item>Lindau</item>
+		<item>Lindenberg</item>
+		<item>Lingen</item>
+		<item>Lippstadt</item>
+		<item>Löbau</item>
+		<item>Löffingen</item>
+		<item>Lohberg</item>
+		<item>Lörrach</item>
+		<item>Losheim</item>
+		<item>Lübbecke</item>
+		<item>Lübeck</item>
+		<item>Lübz</item>
+		<item>Luckau</item>
+		<item>Luckenwalde</item>
+		<item>Lüdenscheid</item>
+		<item>Ludwigsburg</item>
+		<item>Ludwigsfelde</item>
+		<item>Ludwigshafen</item>
+		<item>Ludwigslust</item>
+		<item>Lülsfeld</item>
+		<item>Lünen</item>
+		<item>Lutherstadt Eisleben</item>
+		<item>Lutherstadt Wittenberg</item>
+		<item>Magdeburg</item>
+		<item>Mainbernheim</item>
+		<item>Maintal-Dörnigheim</item>
+		<item>Mainz</item>
+		<item>Malchow</item>
+		<item>Mamming</item>
+		<item>Mannheim</item>
+		<item>Marburg</item>
+		<item>Marklkofen</item>
+		<item>Meckenheim</item>
+		<item>Meerane</item>
+		<item>Meiningen</item>
+		<item>Meißen</item>
+		<item>Mellrichstadt</item>
+		<item>Menden</item>
+		<item>Mengen</item>
+		<item>Merseburg</item>
+		<item>Merzig</item>
+		<item>Miltenberg</item>
+		<item>Mittenwald</item>
+		<item>Monheim</item>
+		<item>Mosbach</item>
+		<item>Mössingen</item>
+		<item>Muggensturm</item>
+		<item>Mühlacker</item>
+		<item>Mühldorf</item>
+		<item>Mühlhausen</item>
+		<item>Mühlheim</item>
+		<item>Münchberg</item>
+		<item>München</item>
+		<item>Münchweiler</item>
+		<item>Munster</item>
+		<item>Münster</item>
+		<item>Naumburg</item>
+		<item>Nettetal</item>
+		<item>Neubrandenburg</item>
+		<item>Neuburg</item>
+		<item>Neuendettelsau</item>
+		<item>Neuffen</item>
+		<item>Neu-Isenburg</item>
+		<item>Neumarkt</item>
+		<item>Neunburg</item>
+		<item>Neunkirchen</item>
+		<item>Neuruppin</item>
+		<item>Neustadt</item>
+		<item>Neustadt b. Coburg</item>
+		<item>Neustrelitz</item>
+		<item>Neuwied</item>
+		<item>Niebüll</item>
+		<item>Niefern-Öschelbronn</item>
+		<item>Niesky</item>
+		<item>Norden</item>
+		<item>Norderney</item>
+		<item>Norderstedt</item>
+		<item>Nordhalben</item>
+		<item>Nordhausen</item>
+		<item>Nordhorn</item>
+		<item>Northeim</item>
+		<item>Nortorf</item>
+		<item>Nüdlingen</item>
+		<item>Nümbrecht</item>
+		<item>Nürnberg</item>
+		<item>Nürtingen</item>
+		<item>Oberaudorf</item>
+		<item>Oberhausen</item>
+		<item>Oberkirch</item>
+		<item>Obernbreit</item>
+		<item>Obernzell</item>
+		<item>Oberstaufen</item>
+		<item>Oberwössen</item>
+		<item>Ochtrup</item>
+		<item>Oelde</item>
+		<item>Oelsnitz</item>
+		<item>Oerlinghausen</item>
+		<item>Ohlstadt</item>
+		<item>Olbernhau</item>
+		<item>Olching</item>
+		<item>Oldenburg</item>
+		<item>Oranienburg</item>
+		<item>Osnabrück</item>
+		<item>Osterholz-Scharmbeck</item>
+		<item>Osterode</item>
+		<item>Ottenhofen</item>
+		<item>Ottenhöfen</item>
+		<item>Ottersberg</item>
+		<item>Owen</item>
+		<item>Paderborn</item>
+		<item>Pappenheim</item>
+		<item>Parchim</item>
+		<item>Partenstein</item>
+		<item>Pasewalk</item>
+		<item>Passau</item>
+		<item>Peine</item>
+		<item>Peißenberg</item>
+		<item>Perleberg</item>
+		<item>Perlesreut</item>
+		<item>Pfarrkirchen</item>
+		<item>Pforzheim</item>
+		<item>Pfullendorf</item>
+		<item>Pinneberg</item>
+		<item>Pinzberg</item>
+		<item>Pirmasens</item>
+		<item>Pirna</item>
+		<item>Plattling</item>
+		<item>Pleinfeld</item>
+		<item>Porta Westfalica</item>
+		<item>Potsdam</item>
+		<item>Pottenstein</item>
+		<item>Prenzlau</item>
+		<item>Pritzwalk</item>
+		<item>Putzbrunn</item>
+		<item>Quedlinburg</item>
+		<item>Quickborn</item>
+		<item>Radebeul</item>
+		<item>Radevormwald</item>
+		<item>Radolfzell</item>
+		<item>Ramstein-Miesenbach</item>
+		<item>Rastatt</item>
+		<item>Ratingen</item>
+		<item>Ratzeburg</item>
+		<item>Raubling</item>
+		<item>Ravensburg</item>
+		<item>Regensburg</item>
+		<item>Reichenbach</item>
+		<item>Reinbek</item>
+		<item>Remscheid</item>
+		<item>Rendsburg</item>
+		<item>Rettenberg</item>
+		<item>Reutlingen</item>
+		<item>Rhede</item>
+		<item>Rheine</item>
+		<item>Rheinfelden</item>
+		<item>Rheinzabern</item>
+		<item>Riesa</item>
+		<item>Rinteln</item>
+		<item>Rödental</item>
+		<item>Rohrdorf</item>
+		<item>Rosenheim</item>
+		<item>Rostock</item>
+		<item>Rotenburg</item>
+		<item>Roth</item>
+		<item>Röthenbach</item>
+		<item>Rothenburg</item>
+		<item>Röttenbach</item>
+		<item>Rottenburg</item>
+		<item>Röttingen</item>
+		<item>Rottweil</item>
+		<item>Rückersdorf</item>
+		<item>Rudolstadt</item>
+		<item>Rülzheim</item>
+		<item>Rüsselsheim</item>
+		<item>Saalfeld</item>
+		<item>Saarbrücken</item>
+		<item>Saarlouis</item>
+		<item>Saarwellingen</item>
+		<item>Sangerhausen</item>
+		<item>Sassnitz</item>
+		<item>Satrup</item>
+		<item>Schaffhausen</item>
+		<item>Schauenstein</item>
+		<item>Scheinfeld</item>
+		<item>Schierling</item>
+		<item>Schifferstadt</item>
+		<item>Schkeuditz</item>
+		<item>Schleswig</item>
+		<item>Schlitz</item>
+		<item>Schneeberg</item>
+		<item>Schneverdingen</item>
+		<item>Schönau</item>
+		<item>Schönebeck</item>
+		<item>Schönkirchen</item>
+		<item>Schonstett</item>
+		<item>Schorndorf</item>
+		<item>Schramberg</item>
+		<item>Schutterwald</item>
+		<item>Schüttorf</item>
+		<item>Schwabach</item>
+		<item>Schwäbisch Gmünd</item>
+		<item>Schwäbisch Hall</item>
+		<item>Schwaig</item>
+		<item>Schwalbach</item>
+		<item>Schwarzenberg</item>
+		<item>Schwarzenbruck</item>
+		<item>Schwedt</item>
+		<item>Schweinfurt</item>
+		<item>Schwendi</item>
+		<item>Schwentinental</item>
+		<item>Schwerin</item>
+		<item>Schwerte</item>
+		<item>Seebruck</item>
+		<item>Selb</item>
+		<item>Senftenberg</item>
+		<item>Siegsdorf</item>
+		<item>Sigmaringen</item>
+		<item>Sigmarszell</item>
+		<item>Simbach</item>
+		<item>Sindelfingen</item>
+		<item>Sinzheim</item>
+		<item>Soest</item>
+		<item>Solingen</item>
+		<item>Soltau</item>
+		<item>Sömmerda</item>
+		<item>Sondershausen</item>
+		<item>Sonneberg</item>
+		<item>Speyer</item>
+		<item>Spreetal</item>
+		<item>Spremberg</item>
+		<item>Springe</item>
+		<item>St.</item>
+		<item>St. Ingbert</item>
+		<item>Stade</item>
+		<item>Stadtlohn</item>
+		<item>Stadtroda</item>
+		<item>Stammbach</item>
+		<item>Staßfurt</item>
+		<item>Stein</item>
+		<item>Steinhagen</item>
+		<item>Steinheim</item>
+		<item>Steißlingen</item>
+		<item>Stendal</item>
+		<item>Stockach</item>
+		<item>Stockstadt</item>
+		<item>Stralsund</item>
+		<item>Straubing</item>
+		<item>Strausberg</item>
+		<item>Stuttgart</item>
+		<item>Suhl</item>
+		<item>Sulz</item>
+		<item>Sulzbach</item>
+		<item>Tacherting</item>
+		<item>Tauberrettersheim</item>
+		<item>Tegernsee</item>
+		<item>Telgte</item>
+		<item>Teterow</item>
+		<item>Tettnang</item>
+		<item>Thüngen</item>
+		<item>Tirschenreuth</item>
+		<item>Titisee-Neustadt</item>
+		<item>Todtnau</item>
+		<item>Töging</item>
+		<item>Torgau</item>
+		<item>Tornesch</item>
+		<item>Traunstein</item>
+		<item>Treuchtlingen</item>
+		<item>Treuenbrietzen</item>
+		<item>Triberg</item>
+		<item>Trier</item>
+		<item>Troisdorf</item>
+		<item>Trossingen</item>
+		<item>Trostberg</item>
+		<item>Tübingen</item>
+		<item>Tuttlingen</item>
+		<item>Überlingen</item>
+		<item>Uelzen</item>
+		<item>Uffenheim</item>
+		<item>Ulm</item>
+		<item>Umkirch</item>
+		<item>Unna</item>
+		<item>Unterkirnach</item>
+		<item>Unterneukirchen</item>
+		<item>Unterwössen</item>
+		<item>Uslar</item>
+		<item>Vagen</item>
+		<item>Velbert</item>
+		<item>Velten</item>
+		<item>Verden</item>
+		<item>Versmold</item>
+		<item>Viernheim</item>
+		<item>Viersen</item>
+		<item>Villingen-Schwenningen</item>
+		<item>Vilsbiburg</item>
+		<item>Vilshofen</item>
+		<item>Völklingen</item>
+		<item>Wachenheim</item>
+		<item>Wadern</item>
+		<item>Wadgassen</item>
+		<item>Waging</item>
+		<item>Waiblingen</item>
+		<item>Waldbüttelbrunn</item>
+		<item>Waldfischbach-Burgalben</item>
+		<item>Waldkirch</item>
+		<item>Waldkirchen</item>
+		<item>Waldkraiburg</item>
+		<item>Waldmünchen</item>
+		<item>Waldshut-Tiengen</item>
+		<item>Walldorf</item>
+		<item>Walldürn</item>
+		<item>Walsrode</item>
+		<item>Waltershausen</item>
+		<item>Wanfried</item>
+		<item>Warburg</item>
+		<item>Waren</item>
+		<item>Warstein</item>
+		<item>Wartenberg</item>
+		<item>Wasserburg</item>
+		<item>Wedel</item>
+		<item>Weikersheim</item>
+		<item>Weilburg</item>
+		<item>Weilerbach</item>
+		<item>Weimar</item>
+		<item>Weinheim</item>
+		<item>Weißenburg</item>
+		<item>Weißenfels</item>
+		<item>Weißenhorn</item>
+		<item>Weißenstadt</item>
+		<item>Weißwasser</item>
+		<item>Wendelstein</item>
+		<item>Werdau</item>
+		<item>Werl</item>
+		<item>Wernigerode</item>
+		<item>Wertheim</item>
+		<item>Westerland</item>
+		<item>Wetzlar</item>
+		<item>Wickede</item>
+		<item>Wiesbaden</item>
+		<item>Wildeck</item>
+		<item>Wilhelmshaven</item>
+		<item>Wilhermsdorf</item>
+		<item>Wilster</item>
+		<item>Windsbach</item>
+		<item>Winsen</item>
+		<item>Wipperfürth</item>
+		<item>Wismar</item>
+		<item>Witten</item>
+		<item>Wittenberge</item>
+		<item>Wittmund</item>
+		<item>Witzenhausen</item>
+		<item>Wolfach</item>
+		<item>Wolfenbüttel</item>
+		<item>Wolfhagen</item>
+		<item>Wolfsburg</item>
+		<item>Wolmirstedt</item>
+		<item>Worms</item>
+		<item>Wörth</item>
+		<item>Wunsiedel</item>
+		<item>Wuppertal</item>
+		<item>Würzburg</item>
+		<item>Zehdenick</item>
+		<item>Zeil</item>
+		<item>Zeitz</item>
+		<item>Zellingen</item>
+		<item>Zerbst</item>
+		<item>Zeulenroda</item>
+		<item>Zeven</item>
+		<item>Zirndorf</item>
+		<item>Zittau</item>
+		<item>Zweibrücken</item>
+		<item>Zwickau</item>
+		<item>Zwiefalten</item>
+		<item>Zwiesel</item>
     </string-array>
 
     <string name="camera_snapshot_snap">Einlesen</string>
