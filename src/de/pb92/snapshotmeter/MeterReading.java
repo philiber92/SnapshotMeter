@@ -18,6 +18,7 @@ import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -38,8 +39,19 @@ public class MeterReading extends ActionBarActivity {
 		objectID = intent.getStringExtra(MainMenu.EXTRA_METER_ID);
 		String value = intent.getStringExtra(CameraSnapshot.EXTRA_METER_VALUE);
 		if(value != null) {
+			if(value.isEmpty()) {
+				Toast t = Toast.makeText(getApplicationContext(), getString(R.string.camera_snapshot_failure), 
+						Toast.LENGTH_LONG);
+				t.setGravity(Gravity.TOP, 0, 0);
+				t.show();
+				return;
+			}
 			EditText editText = (EditText) findViewById(R.id.editText1);
 			editText.setText(value);
+			Toast t = Toast.makeText(getApplicationContext(), getString(R.string.camera_snapshot_success), 
+					Toast.LENGTH_LONG);
+			t.setGravity(Gravity.TOP, 0, 0);
+			t.show(); 
 		}
 	}
 
@@ -55,10 +67,10 @@ public class MeterReading extends ActionBarActivity {
 		// Handle action bar item clicks here. The action bar will
 		// automatically handle clicks on the Home/Up button, so long
 		// as you specify a parent activity in AndroidManifest.xml.
-		int id = item.getItemId();
-		if (id == R.id.action_settings) {
-			return true;
-		}
+//		int id = item.getItemId();
+//		if (id == R.id.action_settings) {
+//			return true;
+//		}
 		return super.onOptionsItemSelected(item);
 	}
 	

@@ -26,7 +26,7 @@ import android.util.Log;
 
 public class SnapshotMeter extends Application{
 	
-	private static final String TESS_TRAINED_DATA = "tess/deu.traineddata";
+	private static final String TESS_TRAINED_DATA = "tessdata/eng.traineddata";
 	static String tessPath;
 	
 	@Override
@@ -39,7 +39,7 @@ public class SnapshotMeter extends Application{
 		Parse.enableLocalDatastore(getApplicationContext());
 		Parse.initialize(this, "gjAeDkcZxwcYIUcTRgjwb9S1zr9guqCbHsncD2SW", 
 				"F3LZazEuN0XEUOlQVRIxeCTjvnonWO00PO0lleJb");
-		ParsePush.subscribeInBackground("", new SaveCallback() {
+		ParsePush.subscribeInBackground("general", new SaveCallback() {
 			  @Override
 			  public void done(ParseException e) {
 			    if (e == null) {
@@ -81,7 +81,9 @@ public class SnapshotMeter extends Application{
 	private void writeTessTrainedData() {
 		String smpath = Environment.getExternalStorageDirectory().toString() + "/SnapshotMeter/";
 		
-		String[] paths = new String[] { smpath, smpath + "tess/" };
+		Log.w("test", smpath);
+		
+		String[] paths = new String[] { smpath, smpath + "tessdata/" };
 		
 		for (String path : paths) {
 			File dir = new File(path);
@@ -92,7 +94,8 @@ public class SnapshotMeter extends Application{
 			}
 		}
 		
-		File tessFile = new File(smpath + "tess/deu.traineddata");
+		
+		File tessFile = new File(smpath + "tessdata/eng.traineddata");
 		if (!tessFile.exists()) {
 			try {
 
@@ -100,7 +103,6 @@ public class SnapshotMeter extends Application{
 				InputStream in = assetManager.open(TESS_TRAINED_DATA);
 				//GZIPInputStream gin = new GZIPInputStream(in);
 				OutputStream out = new FileOutputStream(smpath + TESS_TRAINED_DATA);
-
 				// Transfer bytes from in to out
 				byte[] buf = new byte[1024];
 				int len;
@@ -109,10 +111,12 @@ public class SnapshotMeter extends Application{
 				}
 				in.close();
 				out.close();
-				tessPath = tessFile.getAbsolutePath();
+				tessPath = smpath;
 			} catch (Exception e) {
 				tessPath = null;
 			}
+		} else {
+			tessPath = smpath;
 		}
 	}
 	

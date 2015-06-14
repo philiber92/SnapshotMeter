@@ -13,6 +13,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.content.pm.PackageManager;
+import android.content.res.Resources;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
@@ -20,14 +21,17 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
+import android.widget.Toast;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.hardware.Camera;
 
-@SuppressLint("SimpleDateFormat")
+@SuppressLint({ "SimpleDateFormat", "NewApi" })
 @SuppressWarnings("deprecation")
 public class CameraSnapshot extends Activity {
 	
@@ -82,16 +86,38 @@ public class CameraSnapshot extends Activity {
             }
             
             Bitmap bmp = BitmapFactory.decodeFile(pictureFile.getAbsolutePath());
-            Bitmap value = Bitmap.createBitmap(bmp, (bmp.getWidth() - 350)/2, (bmp.getHeight() - 100)/2, 350, 100);
+            Bitmap value = Bitmap.createBitmap(bmp, (bmp.getWidth() - 450)/2, 
+            				(bmp.getHeight() - 100)/2, 450, 100);
             Bitmap argbFormat = value.copy(Bitmap.Config.ARGB_8888, true);
+            
+//    	    File mediaStorageDir = new File(Environment.getExternalStoragePublicDirectory(
+//  	              Environment.DIRECTORY_PICTURES), "Snapshot Meter");
+//            FileOutputStream out = null;
+//            try {
+//            	out = new FileOutputStream(mediaStorageDir.getAbsoluteFile() +  "/test234234.png");
+//            	argbFormat.compress(Bitmap.CompressFormat.PNG, 100, out);
+//            } catch(Exception e) {
+//            	e.printStackTrace();
+//            	Log.w("error", "camera");
+//            } finally {
+//            		if(out != null) {
+//            			try {
+//							out.close();
+//						} catch (IOException e) {
+//							Log.w("error", "save");
+//							e.printStackTrace();
+//						}
+//            		}
+//            }
             
             TessBaseAPI tess = new TessBaseAPI();
             tess.setVariable(TessBaseAPI.VAR_CHAR_WHITELIST, "0123456789");
             tess.setImage(argbFormat);
-            tess.setPageSegMode(8);
-            tess.init(SnapshotMeter.getTessPath(), "deu");
+            tess.setPageSegMode(3);
+            tess.init(SnapshotMeter.getTessPath(), "eng");
             String tessValue = tess.getUTF8Text();
-            tessValue.replace(" ", "");
+            tessValue = tessValue.replaceAll("[oO]", "0");
+            tessValue = tessValue.replaceAll("[^\\d]", "");
             tess.end();
             
             if(meterID != null) {
@@ -110,6 +136,13 @@ public class CameraSnapshot extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		requestWindowFeature(Window.FEATURE_NO_TITLE);
+		getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+		View decorView = getWindow().getDecorView();
+		int currentapiVersion = android.os.Build.VERSION.SDK_INT;
+		if (currentapiVersion >= android.os.Build.VERSION_CODES.ICE_CREAM_SANDWICH){
+			decorView.setSystemUiVisibility(View.SYSTEM_UI_FLAG_HIDE_NAVIGATION);
+		}
 		setContentView(R.layout.activity_camera_snapshot);
 		this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
 		
@@ -129,6 +162,9 @@ public class CameraSnapshot extends Activity {
         		intent.putExtra(MeterReadingOverview.EXTRA_METER_ID, meterID);
         	}
         	startActivity(intent);
+        } else {
+        	Toast.makeText(getApplicationContext(), getString(R.string.camera_snapshot_description), Toast.LENGTH_LONG)
+        	     .show();
         }
 
         // Create our Preview view and set it as the content of our activity.
@@ -165,10 +201,10 @@ public class CameraSnapshot extends Activity {
 		// Handle action bar item clicks here. The action bar will
 		// automatically handle clicks on the Home/Up button, so long
 		// as you specify a parent activity in AndroidManifest.xml.
-		int id = item.getItemId();
-		if (id == R.id.action_settings) {
-			return true;
-		}
+//		int id = item.getItemId();
+//		if (id == R.id.action_settings) {
+//			return true;
+//		}
 		return super.onOptionsItemSelected(item);
 	}
 	
@@ -225,4 +261,15 @@ public class CameraSnapshot extends Activity {
 
 	    return mediaFile;
 	}
+	
+	@SuppressWarnings("unused")
+	private int getNavigationbarHeight() {
+		Resources resources = getResources();
+		int resourceId = resources.getIdentifier("navigation_bar_height", "dimen", "android");
+		if (resourceId > 0) {
+		    return resources.getDimensionPixelSize(resourceId);
+		}
+		return 0;
+	}
+	
 }

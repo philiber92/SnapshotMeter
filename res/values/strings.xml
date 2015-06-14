@@ -542,5 +542,7 @@
 	<string name="meter_detail_prompt_send_no">Abbrechen</string>
 	<string name="meter_detail_prompt_send_success">Zählertand wurde erfolgreich gesendet!</string>
 	<string name="meter_detail_prompt_send_failure">Zählerstand konnte nicht gesendet werden! Bitte probieren Sie es später erneut!</string>
-	
+	<string name="camera_snapshot_success">Bitte überprüfen Sie den ermittelten Zählerstand!</string>
+	<string name="camera_snapshot_failure">Ihr Zählerstand konnte leider nicht automatisch ermittelt werden! Bitte tippen Sie Ihren Zählerstand ein!</string>
+	<string name="camera_snapshot_description">Bitte den Zählerstand des Zählers in den roten Bereich!</string>
 </resources>

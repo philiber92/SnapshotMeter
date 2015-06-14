@@ -25,6 +25,13 @@
     <uses-feature
         android:name="android.hardware.camera"
         android:required="false" />
+	<uses-feature 
+	    android:name="android.hardware.camera.autofocus"
+	    android:required="false" />
+	<uses-feature 
+	    android:name="android.hardware.camera.flash"
+	    android:required="false" />
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
 
     <application
         android:name=".SnapshotMeter"
@@ -43,7 +50,8 @@
         </activity>
         <activity
             android:name=".CameraSnapshot"
-            android:label="@string/title_activity_camera_snapshot" >
+            android:label="@string/title_activity_camera_snapshot"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
         </activity>
         <activity
             android:name=".MeterDetail"
@@ -81,11 +89,7 @@
 		  <intent-filter>
 		    <action android:name="com.google.android.c2dm.intent.RECEIVE" />
 		    <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
-		 
-		    <!--
-		      IMPORTANT: Change "com.parse.tutorials.pushnotifications" to match your app's package name.
-		    -->
-		    <category android:name="com.parse.tutorials.pushnotifications" />
+		    <category android:name="de.pb92.snapshotmeter" />
 		  </intent-filter>
 		</receiver>
 		<receiver android:name="com.parse.ParsePushBroadcastReceiver" android:exported="false">
