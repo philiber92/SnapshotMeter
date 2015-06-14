@@ -97,7 +97,7 @@
 		    android:layout_alignLeft="@+id/textView1"
 		    android:layout_alignRight="@+id/textView1"
 		    android:layout_marginTop="3dp" 
-		    android:entries="@array/meter_unit" />
+		    android:entries="@array/settings_providers" />
 
 		<RelativeLayout
 		    android:layout_height="wrap_content"
