@@ -12,6 +12,7 @@ public class MeterReading extends ParseObject {
 	
 	public static final String COLUMN_VALUE = "value";
 	public static final String COLUMN_METER_NUMBER = "meterNumber";
+	public static final String COLUMN_METER_TYPE = "meterType";
 	public static final String COLUMN_LAST_NAME = "lastName";
 	public static final String COLUMN_PROVIDER = "provider";
 	public static final String COLUMN_TRANSMITTED = "transmitted";
@@ -24,6 +25,10 @@ public class MeterReading extends ParseObject {
 	
 	public String getID() {
 		return getString(COLUMN_ID);
+	}
+	
+	public String getMeterType() {
+		return getString(COLUMN_METER_TYPE);
 	}
 	
 	public long getMeterNumber() {
@@ -56,6 +61,10 @@ public class MeterReading extends ParseObject {
 	
 	public void setReadingDate(Date date) {
 		put(COLUMN_READING_DATE, date);
+	}
+	
+	public void setMeterType(String meterType) {
+		put(COLUMN_METER_TYPE, meterType);
 	}
 	
 	public void setMeterNumber(long number) {

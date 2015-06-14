@@ -118,6 +118,7 @@ public class MeterReading extends ActionBarActivity {
 			meterReading.setMeterNumber(meter.getMeterNumber());
 			meterReading.setProvider(meter.getProvider());
 			meterReading.setTransmitted(true);
+			meterReading.setMeterType(meter.getMeterType());
 			meterReading.setValue(value);
 			ParseACL acl = new ParseACL();
 			acl.setPublicReadAccess(false);
@@ -192,6 +193,7 @@ public class MeterReading extends ActionBarActivity {
 			meterReading.setProvider(meter.getProvider());
 			meterReading.setTransmitted(false);
 			meterReading.setID();
+			meterReading.setMeterType(meter.getMeterType());
 			meterReading.setReadingDate(new Date());
 			idLocally = meterReading.getID();
 			meterReading.setValue(value);

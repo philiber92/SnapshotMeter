@@ -545,4 +545,5 @@
 	<string name="camera_snapshot_success">Bitte überprüfen Sie den ermittelten Zählerstand!</string>
 	<string name="camera_snapshot_failure">Ihr Zählerstand konnte leider nicht automatisch ermittelt werden! Bitte tippen Sie Ihren Zählerstand ein!</string>
 	<string name="camera_snapshot_description">Bitte den Zählerstand des Zählers in den roten Bereich!</string>
+	<string name="meter_reading_quick_type">Zählertyp:</string>
 </resources>

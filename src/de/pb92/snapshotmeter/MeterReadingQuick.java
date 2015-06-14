@@ -81,6 +81,7 @@ public class MeterReadingQuick extends ActionBarActivity {
 		
 		EditText numberField = (EditText) findViewById(R.id.editText1);
 		Spinner providerField = (Spinner) findViewById(R.id.spinner1);
+		Spinner typeField = (Spinner) findViewById(R.id.spinner2);
 		EditText valueField = (EditText) findViewById(R.id.editText2);
 		
 		String numberText = numberField.getText().toString().trim();
@@ -103,12 +104,14 @@ public class MeterReadingQuick extends ActionBarActivity {
 		Long number = Long.parseLong(numberText);
 		Long value = Long.parseLong(valueText);
 		String provider = providerField.getSelectedItem().toString();
+		String type = typeField.getSelectedItem().toString();
 		
 		MeterReading mReading = new MeterReading();
 		mReading.setLastName(lastName);
 		mReading.setMeterNumber(number);
 		mReading.setProvider(provider);
 		mReading.setValue(value);
+		mReading.setMeterType(type);
 		mReading.setTransmitted(true);
 		ParseACL acl = new ParseACL();
 		acl.setPublicReadAccess(false);
